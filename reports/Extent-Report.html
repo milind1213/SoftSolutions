@@ -1,0 +1,1866 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>SoftSolutions Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test Result</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 27, 2023 22:31:36</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the flow for Non-MH Rental Agreements</p>
+            <p class="text-sm">
+              <span>10:31:37 PM</span> / <span>00:04:19:877</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the flow for Non-MH Rental Agreements</h5>
+<span class='badge badge-success'>11.27.2023 10:31:37 PM</span>
+<span class='badge badge-danger'>11.27.2023 10:35:57 PM</span>
+<span class='badge badge-default'>00:04:19:877</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Validate the functionality for generating a rental agreement estimate without any addons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Validate the functionality for generating a rental agreement estimate without any addons</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:101)
+	at com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email(RAStampedAgreement.java:45)
+	at ✽.User enters a valid Login Credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/E-Stamped%20Agreement.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Selects Stamp Paper "₹ 100 Stamp" option from the dropdowns</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then validate the title "E-Stamped Agreement" and Price details in SummaryPage</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Validate_the_functionality_for_generating_a_rental_agreement_estimate_without_any_addons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Verify the Tenant Detail Edit Functionality from Summary</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Verify the Tenant Detail Edit Functionality from Summary</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selects Stamp Paper "<stamPaper>" option from the dropdowns</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on Edit "Tenant Detail"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Enters Tenant Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Sandhya R</td></tr><tr><td>Age</td><td>25</td></tr><tr><td>Phone</td><td>9503333701</td></tr><tr><td>Permanent Address Full</td><td>B-111,Banglore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321G</td></tr><tr><td>Email Address</td><td>gm@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Tenant</td></tr><tr><td>Gender</td><td>Female</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validating the Tenant Details in Summary</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Validate the functionality for generating a rental agreement estimate with addons</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Validate the functionality for generating a rental agreement estimate with addons</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selects Stamp Paper "₹ 100 Stamp" option from the dropdowns</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement, eSign, delivery Addons and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validating the title "E-Stamped Agreement" and Price details in SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Verify the Landlord Detail Edit Functionality from Summary</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Verify the Landlord Detail Edit Functionality from Summary</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selects Stamp Paper "<stamPaper>" option from the dropdowns</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on Edit "Landlord Detail"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Enters Landlord Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Milind G</td></tr><tr><td>Age</td><td>30</td></tr><tr><td>Phone</td><td>9503333700</td></tr><tr><td>Permanent Address Full</td><td>A-213,Banglore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321F</td></tr><tr><td>Email Address</td><td>mg@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Owner</td></tr><tr><td>Gender</td><td>Male</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validating the Landlord Details in Summary</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Verify the Contract Detail Edit Functionality from Summary</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Verify the Contract Detail Edit Functionality from Summary</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selects Stamp Paper "<stamPaper>" option from the dropdowns</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on Edit "Contract Detail"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Enters Contract Details:</span>
+      <div><table class='markup-table table '><tr><td>Agreement Duration (In months)</td><td>2 Months</td></tr><tr><td>Rent Amount</td><td>200000</td></tr><tr><td>Refundable Deposit</td><td>1200000</td></tr><tr><td>Minimum Lockin Period</td><td>3</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicking on Add New button in SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User submiting delivery details "A 404 Bren Mercury,Bangalore" and "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicking on Number of Extracopy "2" button.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Validate the Quotation Pricing Details After adding extracopy</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicking on  PayNow button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User entering Payment Details "4111-1111-1111-1111" "02/44" "121"  "Milind" and clicks on Make Payment Btn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Entering "1234" and click on SubmitButton</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Validating the Order Confirmation status in MyBooking</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Verify the property Details Edit Functionality from Summary</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Verify the property Details Edit Functionality from Summary</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters a valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user is logged in or signed up "Successfully"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Landed on the Legal Services HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Selects a "Bangalore" from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects the "E-Stamped Agreement" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selects Stamp Paper "<stamPaper>" option from the dropdowns</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Selecting Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement, eSign, delivery Addons and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on the summaryContent and redirects on the SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicking on Edit "Property Detail"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Enters Property Details:</span>
+      <div><table class='markup-table table '><tr><td>Floor Number</td><td>10</td></tr><tr><td>BHK Type</td><td>4 BHK</td></tr><tr><td>Type of Property</td><td>Shop</td></tr><tr><td>Shop Number</td><td>301</td></tr><tr><td>Building Name</td><td>ABC</td></tr><tr><td>Locality</td><td>HSR</td></tr><tr><td>Pincode</td><td>560035</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicking on Add Btn for adding Number of Bathrooms 3</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validating the Property Details in Summary</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Upload your Draft Upload Functionality</p>
+            <p class="text-sm">
+              <span>10:31:37 PM</span> / <span>00:04:03:140</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify Upload your Draft Upload Functionality</h5>
+<span class='badge badge-success'>11.27.2023 10:31:37 PM</span>
+<span class='badge badge-danger'>11.27.2023 10:35:41 PM</span>
+<span class='badge badge-default'>00:04:03:140</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Verify Upload your Draft Functionality without Addons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()">
+                <span>Given User Landed on HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()">
+                <span>When User Enters valid PhoneNumber, Name, and email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()">
+                <span>And User clicks on login continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_is_on_the_legal_services_page()">
+                <span>Given User is on the Legal Services Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_selects_a_city_from_the_available_options()">
+                <span>When User selects a city from the available options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_the_check_price_button()">
+                <span>And User clicks on the Check Price button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(java.lang.String)">
+                <span>And User selects the "Upload your Draft" package</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_uploads_the_old_or_existing_rent_agreement_draft()">
+                <span>And User uploads the Old or Existing Rent Agreement draft</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_selects_stamp_paper_option()">
+                <span>And User selects Stamp Paper option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_selects_rent_agreement_start_date()">
+                <span>And User selects Rent Agreement Start Date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_enters_landlord_name_and_tenant_name()">
+                <span>And User enters LandlordName and TenantName</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_selects_addons_clicks_on_save_and_continue_button()">
+                <span>And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.verify_the_title_of_the_selected_package_is_displayed_on_the_summary_page(java.lang.String)">
+                <span>Then Verify the Title of the selected "Upload your Draft" Package is displayed on the Summary Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details()">
+                <span>Then validate the Quotation Price Details</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [1029] but found [1011]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details(RAUploadYourDraft.java:123)
+	at ✽.validate the Quotation Price Details(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:22)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_Upload_your_Draft_Functionality_without_Addons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded4.png' src="test-output/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>New User SignUp Verification</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()">
+                <span>Given User Landed on HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()">
+                <span>When User Enters valid PhoneNumber, Name, and email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()">
+                <span>And User clicks on login continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sos.stepDefinitions.RAUploadYourDraft.validate_the_outcomes(java.lang.String)">
+                <span>Then validate the outcome loggedIn or SignedUp "Successfully"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log fail-bg mr-2">Fail</span>Verify Add Delivery Address Functionality in Upload your draft flow</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="74"><span class="badge log fail-bg mr-2">Fail</span>Verify Add Delivery Address Functionality in Upload your draft flow</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User Landed on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Enters valid PhoneNumber, Name, and email</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on login continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on the Legal Services Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User selects a city from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And User selects the "Upload your Draft" package</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[@class='title'] [text()='Upload your Draft']//following::button[text()='Select']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectPackage(RentalServiceWebPage.java:818)
+	at com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(RAUploadYourDraft.java:75)
+	at ✽.User selects the "Upload your Draft" package(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:28)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User uploads the Old or Existing Rent Agreement draft</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User selects Stamp Paper option</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User selects Rent Agreement Start Date</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User enters LandlordName and TenantName</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User clicks on Add New button in Summary</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Validate the checked icon and delivery Receiver name in summary</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_Add_Delivery_Address_Functionality_in_Upload_your_draft_flow
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log fail-bg mr-2">Fail</span>Verify Add Add Extra Copy Functionaliy in Upload your draft flow</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="87"><span class="badge log fail-bg mr-2">Fail</span>Verify Add Add Extra Copy Functionaliy in Upload your draft flow</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User Landed on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Enters valid PhoneNumber, Name, and email</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on login continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on the Legal Services Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User selects a city from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects the "Upload your Draft" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User uploads the Old or Existing Rent Agreement draft</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Stamp Paper option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters LandlordName and TenantName</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Add New button in Summary</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Number of Extracopy "2" button.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then validate the Quotation Price Details After adding extracopy</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:55)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify_Add_Add_Extra_Copy_Functionaliy_in_Upload_your_draft_flow
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded5.png' src="test-output/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="165"><span class="badge log fail-bg mr-2">Fail</span>MakePayment functionaliy</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="166"><span class="badge log fail-bg mr-2">Fail</span>MakePayment functionaliy</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User Landed on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Enters valid PhoneNumber, Name, and email</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on login continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on the Legal Services Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User selects a city from the available options</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on the Check Price button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects the "Upload your Draft" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User uploads the Old or Existing Rent Agreement draft</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Stamp Paper option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Rent Agreement Start Date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters LandlordName and TenantName</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Add New button in Summary</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Number of Extracopy "2" button.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then validate the Quotation Price Details After adding extracopy</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:74)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User clicking on  PayButton</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User entered "4111-1111-1111-1111" "0244" "121"  "Milind" and clicks on Make Payment Btn</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User Enter "1234" and click on SubmitButton</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Validating the Order Confirmation in  MyBookings</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>MakePayment_functionaliy
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded6.png' src="test-output/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the Non-MH Rental Agreements flow</p>
+            <p class="text-sm">
+              <span>10:31:37 PM</span> / <span>00:05:59:543</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the Non-MH Rental Agreements flow</h5>
+<span class='badge badge-success'>11.27.2023 10:31:37 PM</span>
+<span class='badge badge-danger'>11.27.2023 10:37:37 PM</span>
+<span class='badge badge-default'>00:05:59:543</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>Generate Estimate</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log fail-bg mr-2">Fail</span>Generate Estimate</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User landed on the on the NoBroker Login HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User login  with valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Navigates to the Legal Services Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Clicks on the Check Price button and Selects the "E-Stamped Agreement" Package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='current-month']"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b5a67b0f2ec15e9cc682922031082d7, findElement {using=css selector, value=div[class*='current-month']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45513/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b5a67b0f2ec15e9cc682922031082d7
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.genrateEstimate(RentalServiceWebPage.java:153)
+	at com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_stamp_agreement_duration_and_notarised_agreement_e_sign_and_delivery_addons(RAEstampAgreementFlow.java:61)
+	at ✽.User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/NewContiuneFLow.feature:10)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Lands on Property Detail Page and Enters Property Details:</span>
+      <div><table class='markup-table table '><tr><td>Floor Number</td><td>10</td></tr><tr><td>BHK Type</td><td>4 BHK</td></tr><tr><td>Type of Property</td><td>Shop</td></tr><tr><td>Shop Number</td><td>301</td></tr><tr><td>Building Name</td><td>ABC</td></tr><tr><td>Locality</td><td>HSR</td></tr><tr><td>Pincode</td><td>560035</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click and Add Number of <2> Bathrooms</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Lands on Landlord Detail Page and Enters Landlord Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Milind G</td></tr><tr><td>Age</td><td>30</td></tr><tr><td>Phone</td><td>9503333700</td></tr><tr><td>Permanent Address Full</td><td>A-213, Bangalore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321F</td></tr><tr><td>Email Address</td><td>mg@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Owner</td></tr><tr><td>Gender</td><td>Male</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Lands on Tenant Detail Page and Enters Tenant Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Sandhya R</td></tr><tr><td>Age</td><td>25</td></tr><tr><td>Phone</td><td>9503333701</td></tr><tr><td>Permanent Address Full</td><td>B-111, Bangalore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321G</td></tr><tr><td>Email Address</td><td>gm@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Tenant</td></tr><tr><td>Gender</td><td>Female</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Lands on Contract Details Page and Enters Contract Details:</span>
+      <div><table class='markup-table table '><tr><td>Agreement Duration (In months)</td><td>2 Months</td></tr><tr><td>Rent Amount</td><td>200000</td></tr><tr><td>Refundable Deposit</td><td>1200000</td></tr><tr><td>Minimum Lockin Period</td><td>3</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User Enters Deposit Payment Details,</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User Selects Rent Day, Notice Period, and Amenities</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicks on Save and Continue button and Navigate to SummaryPage</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicking on Add New button and submitting delivery Address "A 404 Bren Mercury, Bangalore" and "560035"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clicking on Number of Extra copy "2" button.</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Validate Agreement and Quotation Pricing Details in Summary Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Generate_Estimate
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded3.png' src="test-output/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Make Payment and Validate Order Status</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Make Payment and Validate Order Status</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User landed on the on the NoBroker Login HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User login  with valid Login Credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User Navigates to the Legal Services Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User Clicks on the Check Price button and Selects the "E-Stamped Agreement" Package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Lands on Property Detail Page and Enters Property Details:</span>
+      <div><table class='markup-table table '><tr><td>Floor Number</td><td>10</td></tr><tr><td>BHK Type</td><td>4 BHK</td></tr><tr><td>Type of Property</td><td>Shop</td></tr><tr><td>Shop Number</td><td>301</td></tr><tr><td>Building Name</td><td>ABC</td></tr><tr><td>Locality</td><td>HSR</td></tr><tr><td>Pincode</td><td>560035</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click and Add Number of <2> Bathrooms</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Lands on Landlord Detail Page and Enters Landlord Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Milind G</td></tr><tr><td>Age</td><td>30</td></tr><tr><td>Phone</td><td>9503333700</td></tr><tr><td>Permanent Address Full</td><td>A-213, Bangalore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321F</td></tr><tr><td>Email Address</td><td>mg@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Owner</td></tr><tr><td>Gender</td><td>Male</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Lands on Tenant Detail Page and Enters Tenant Details:</span>
+      <div><table class='markup-table table '><tr><td>Full Name</td><td>Sandhya R</td></tr><tr><td>Age</td><td>25</td></tr><tr><td>Phone</td><td>9503333701</td></tr><tr><td>Permanent Address Full</td><td>B-111, Bangalore</td></tr><tr><td>PAN Number (ABCDE1234F)</td><td>ABCDE4321G</td></tr><tr><td>Email Address</td><td>gm@gmail.com</td></tr><tr><td>PIN Code</td><td>560035</td></tr><tr><td>Party Type</td><td>Tenant</td></tr><tr><td>Gender</td><td>Female</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicks on Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Lands on Contract Details Page and Enters Contract Details:</span>
+      <div><table class='markup-table table '><tr><td>Agreement Duration (In months)</td><td>2 Months</td></tr><tr><td>Rent Amount</td><td>200000</td></tr><tr><td>Refundable Deposit</td><td>1200000</td></tr><tr><td>Minimum Lockin Period</td><td>3</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Enters Deposit Payment Details,</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Selects Rent Day, Notice Period, and Amenities</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicks on Save and Continue button and Navigate to SummaryPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicking on Add New button and submitting delivery Address "A 404 Bren Mercury, Bangalore" and "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clicking on Number of Extra copy "2" button.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Validate Agreement and Quotation Pricing Details in Summary Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Clicking on Pay button and Navigate to Payment Dashboard</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User entering the Payment Details "4111-1111-1111-1111" "02/44" "121"  "Milind" and clicks on Make Payment Btn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User Entering OTP "1234" and click on SubmitBtn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Validating the Payment and Order Confirmation status in MyBooking</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:32:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>When User enters a valid Login Credentials</a>
+<div class="">
+<span class="badge badge-default">Verify the flow for Non-MH Rental Agreements.Validate the functionality for generating a rental agreement estimate without any addons.When User enters a valid Login Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:33:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='152'>And User selects the "Upload your Draft" package</a>
+<div class="">
+<span class="badge badge-default">Verify Upload your Draft Upload Functionality.Verify Add Delivery Address Functionality in Upload your draft flow.And User selects the "Upload your Draft" package</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:33:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='206'>Then validate the Quotation Price Details</a>
+<div class="">
+<span class="badge badge-default">Verify Upload your Draft Upload Functionality.Verify Upload your Draft Functionality without Addons.Then validate the Quotation Price Details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:34:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='236'>Then validate the Quotation Price Details After adding extracopy</a>
+<div class="">
+<span class="badge badge-default">Verify Upload your Draft Upload Functionality.Verify Add Add Extra Copy Functionaliy in Upload your draft flow.Then validate the Quotation Price Details After adding extracopy</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:35:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='256'>Then validate the Quotation Price Details After adding extracopy</a>
+<div class="">
+<span class="badge badge-default">Verify Upload your Draft Upload Functionality.MakePayment functionaliy.Then validate the Quotation Price Details After adding extracopy</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:33:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='131'>And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons</a>
+<div class="">
+<span class="badge badge-default">Verify the Non-MH Rental Agreements flow.Generate Estimate.And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 27, 2023 22:31:36</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 27, 2023 22:37:37</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='53%'><b>7</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='46%'><b>6</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='79%'><b>164</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>6</b> steps failed,
+<b>36</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Verify the flow for Non-MH Rental Agreements":259.877,"Verify Upload your Draft Upload Functionality":243.14,"Verify the Non-MH Rental Agreements flow":359.543
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 7,
+failChild: 6,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 164,
+failGrandChild: 6,
+warningGrandChild: 0,
+skipGrandChild: 36,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

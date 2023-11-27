@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.sos.testRunner.TestNG_TestRunner" time="362.054" tests="13" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="/home/milind/.cache/selenium/chromedriver/linux64/117.0.5938.149/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/test-classes:/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/classes:/home/milind/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/home/milind/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/milind/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/home/milind/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/home/milind/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/milind/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/home/milind/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/home/milind/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/home/milind/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/milind/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/milind/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/milind/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/milind/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/milind/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/milind/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-java/4.13.0/selenium-java-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.13.0/selenium-chrome-driver-4.13.0.jar:/home/milind/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/milind/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/home/milind/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/milind/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/milind/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/milind/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/milind/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/milind/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.13.0/selenium-chromium-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.13.0/selenium-devtools-v115-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.13.0/selenium-devtools-v116-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.13.0/selenium-devtools-v117-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.13.0/selenium-devtools-v85-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.13.0/selenium-edge-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.13.0/selenium-firefox-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/home/milind/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.13.0/selenium-ie-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/home/milind/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/home/milind/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/home/milind/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/milind/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/milind/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/milind/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/milind/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/milind/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/milind/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/home/milind/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.13.0/selenium-safari-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/home/milind/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/home/milind/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/home/milind/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/home/milind/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/home/milind/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/home/milind/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/home/milind/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/milind/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/home/milind/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/milind/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/milind/.m2/repository/io/cucumber/cucumber-testng/7.14.0/cucumber-testng-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/home/milind/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/milind/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/milind/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/milind/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/milind/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/milind/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/milind/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/milind/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/milind/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/milind/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/milind/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/milind/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/milind/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/milind/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/milind/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/milind/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/milind/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/home/milind/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/milind/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/milind/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/milind/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/milind/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/milind/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.13.0/extentreports-cucumber7-adapter-1.13.0.jar:/home/milind/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/milind/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/milind/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/milind/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/home/milind/.m2/repository/tech/grasshopper/extent-pdf-report/2.11.0/extent-pdf-report-2.11.0.jar:/home/milind/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.13.0/cucumber-pdf-report-2.13.0.jar:/home/milind/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/home/milind/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/home/milind/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/home/milind/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/home/milind/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/home/milind/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/home/milind/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/home/milind/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/home/milind/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/home/milind/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/home/milind/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/home/milind/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/home/milind/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/home/milind/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/home/milind/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/home/milind/.m2/repository/tech/grasshopper/extent-excel-report/1.3.0/extent-excel-report-1.3.0.jar:/home/milind/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/milind/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/milind/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/milind/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/milind/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/milind/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-11/lib"/>
+    <property name="sun.java.command" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/surefire/surefirebooter-20231127223135693_3.jar /home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/surefire 2023-11-27T22-31-35_552-jvmRun1 surefire-20231127223135693_1tmp surefire_0-20231127223135693_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/test-classes:/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/classes:/home/milind/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/home/milind/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/milind/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/home/milind/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/home/milind/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/milind/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/home/milind/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/home/milind/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/home/milind/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/home/milind/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/milind/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/milind/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/milind/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/milind/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/milind/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/milind/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-java/4.13.0/selenium-java-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.13.0/selenium-chrome-driver-4.13.0.jar:/home/milind/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/milind/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/home/milind/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/milind/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/milind/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/milind/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/milind/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/milind/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.13.0/selenium-chromium-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.13.0/selenium-devtools-v115-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.13.0/selenium-devtools-v116-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.13.0/selenium-devtools-v117-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.13.0/selenium-devtools-v85-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.13.0/selenium-edge-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.13.0/selenium-firefox-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/home/milind/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.13.0/selenium-ie-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/home/milind/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/home/milind/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/home/milind/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/home/milind/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/home/milind/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/milind/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/milind/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/milind/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/milind/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/milind/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/milind/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/milind/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/home/milind/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.13.0/selenium-safari-driver-4.13.0.jar:/home/milind/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/home/milind/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/home/milind/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/home/milind/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/home/milind/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/home/milind/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/home/milind/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/home/milind/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/milind/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/home/milind/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/milind/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/milind/.m2/repository/io/cucumber/cucumber-testng/7.14.0/cucumber-testng-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/home/milind/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/home/milind/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/milind/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/milind/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/milind/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/milind/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/milind/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/milind/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/milind/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/milind/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/milind/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/milind/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/milind/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/milind/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/milind/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/milind/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/milind/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/milind/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/milind/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/milind/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/home/milind/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/milind/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/milind/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/milind/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/milind/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/milind/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.13.0/extentreports-cucumber7-adapter-1.13.0.jar:/home/milind/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/milind/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/milind/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/milind/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/home/milind/.m2/repository/tech/grasshopper/extent-pdf-report/2.11.0/extent-pdf-report-2.11.0.jar:/home/milind/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.13.0/cucumber-pdf-report-2.13.0.jar:/home/milind/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/home/milind/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/home/milind/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/home/milind/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/home/milind/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/home/milind/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/home/milind/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/home/milind/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/home/milind/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/home/milind/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/home/milind/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/home/milind/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/home/milind/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/home/milind/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/home/milind/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/home/milind/.m2/repository/tech/grasshopper/extent-excel-report/1.3.0/extent-excel-report-1.3.0.jar:/home/milind/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/milind/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/milind/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/milind/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/milind/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/milind/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/milind"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-11"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/target/surefire/surefirebooter-20231127223135693_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="user.name" value="milind"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.0-88-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/home/milind/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.15.1"/>
+    <property name="user.dir" value="/home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Validate the functionality for generating a rental agreement estimate without any addons&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](1)" classname="com.sos.testRunner.TestNG_TestRunner" time="37.287">
+    <failure message="Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:101)
+	at com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email(RAStampedAgreement.java:45)
+	at ✽.User enters a valid Login Credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/E-Stamped%20Agreement.feature:5)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Validate the functionality for generating a rental agreement estimate without any addons # src/test/resources/HSFeatures/E-Stamped Agreement.feature:19
+
+Scenario Outline: Verify the Tenant Detail Edit Functionality from Summary                          # src/test/resources/HSFeatures/E-Stamped Agreement.feature:114
+
+Scenario Outline: Validate the functionality for generating a rental agreement estimate with addons   # src/test/resources/HSFeatures/E-Stamped Agreement.feature:34
+
+Scenario: Verify Upload your Draft Functionality without Addons                                                   # src/test/resources/HSFeatures/UploadYourDraft.feature:11
+
+Scenario Outline: Verify the Landlord Detail Edit Functionality from Summary                        # src/test/resources/HSFeatures/E-Stamped Agreement.feature:86
+
+Scenario Outline: Generate Estimate                                                                                              # src/test/resources/HSFeatures/NewContiuneFLow.feature:58
+
+Scenario Outline: Verify the Contract Detail Edit Functionality from Summary                                     # src/test/resources/HSFeatures/E-Stamped Agreement.feature:142
+
+Scenario: New User SignUp Verification                          # src/test/resources/HSFeatures/UploadYourDraft.feature:8
+
+Scenario Outline: Make Payment and Validate Order Status                                                                         # src/test/resources/HSFeatures/NewContiuneFLow.feature:117
+
+Scenario Outline: Verify the property Details Edit Functionality from Summary                         # src/test/resources/HSFeatures/E-Stamped Agreement.feature:59
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+  Given User is on the HomePage                                                                     # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  Given User is on the HomePage                                                                       # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  Given User landed on the on the NoBroker Login HomePage                                                                        # com.sos.stepDefinitions.RAEstampAgreementFlow.landed_NoBroker_Login_Page()
+  Given User is on the HomePage                                                                       # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  Given User Landed on HomePage                                 # com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()
+  Given User is on the HomePage                                                                            # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  Given User is on the HomePage                                                                                  # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  Given User Landed on HomePage                                                                                   # com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()
+  Given User landed on the on the NoBroker Login HomePage                                                                        # com.sos.stepDefinitions.RAEstampAgreementFlow.landed_NoBroker_Login_Page()
+  Given User is on the HomePage                                                                     # com.sos.stepDefinitions.RAStampedAgreement.user_is_on_the_home_page()
+  When User enters a valid Login Credentials                                                               # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+      java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:101)
+	at com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email(RAStampedAgreement.java:45)
+	at ✽.User enters a valid Login Credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/E-Stamped%20Agreement.feature:5)
+
+  Then the user is logged in or signed up "Successfully"                                                   # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  Given User Landed on the Legal Services HomePage                                                         # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  When User Selects a "Bangalore" from the available options                                               # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  And User click on the Check Price button                                                                 # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  And User Selects the "E-Stamped Agreement" package                                                       # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  And Selects Stamp Paper "₹ 100 Stamp" option from the dropdowns                                          # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  And Selecting Rent Agreement Start Date                                                                  # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  And clicking on the summaryContent and redirects on the SummaryPage                                      # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  Then validate the title "E-Stamped Agreement" and Price details in SummaryPage                           # com.sos.stepDefinitions.RAStampedAgreement.validateTitleAndPriceInSummaryPage(java.lang.String)
+
+    Embedding Validate_the_functionality_for_generating_a_rental_agreement_estimate_without_any_addons [image/png 39727 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=117.0.5938.149)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b36dbd11c371159729832bdd392ad49, clickElement {id=946E21A6C0DC0E9718DA994ECC296140_element_31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46353/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (6b36dbd11c371159729832bdd392ad49)] -> xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
+Session ID: 6b36dbd11c371159729832bdd392ad49
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:187)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:101)
+	at com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email(RAStampedAgreement.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;New User SignUp Verification&quot;, &quot;Verify Upload your Draft Upload Functionality&quot;](2)" classname="com.sos.testRunner.TestNG_TestRunner" time="6.959">
+    <system-out><![CDATA[
+Scenario Outline: Verify Add Delivery Address Functionality in Upload your draft flow                             # src/test/resources/HSFeatures/UploadYourDraft.feature:39
+Browser value is: chrome
+  When User Enters valid PhoneNumber, Name, and email           # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()
+  When User Enters valid PhoneNumber, Name, and email                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()
+  Given User Landed on HomePage                                                                                   # com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()
+  When User enters a valid Login Credentials                                                        # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+  Then the user is logged in or signed up "Successfully"                                            # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  And User clicks on login continue button                      # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()
+  Then validate the outcome loggedIn or SignedUp "Successfully" # com.sos.stepDefinitions.RAUploadYourDraft.validate_the_outcomes(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Add Delivery Address Functionality in Upload your draft flow&quot;, &quot;Verify Upload your Draft Upload Functionality&quot;](3)" classname="com.sos.testRunner.TestNG_TestRunner" time="70.323">
+    <failure message="Failed to click on element [By.xpath: //div[@class=&apos;title&apos;] [text()=&apos;Upload your Draft&apos;]//following::button[text()=&apos;Select&apos;]]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Failed to click on element [By.xpath: //div[@class='title'] [text()='Upload your Draft']//following::button[text()='Select']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectPackage(RentalServiceWebPage.java:818)
+	at com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(RAUploadYourDraft.java:75)
+	at ✽.User selects the "Upload your Draft" package(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:28)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Verify Add Add Extra Copy Functionaliy in Upload your draft flow                                # src/test/resources/HSFeatures/UploadYourDraft.feature:58
+Browser value is: chrome
+  And User clicks on login continue button                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()
+  When User enters a valid Login Credentials                                                          # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+  Then the user is logged in or signed up "Successfully"                                              # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  When User login  with valid Login Credentials                                                                                  # com.sos.stepDefinitions.RAEstampAgreementFlow.user_logs_in_with_valid_login_credentials()
+  Given User Landed on HomePage                                                                                   # com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()
+  When User enters a valid Login Credentials                                                          # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+  Then the user is logged in or signed up "Successfully"                                              # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  When User login  with valid Login Credentials                                                                                  # com.sos.stepDefinitions.RAEstampAgreementFlow.user_logs_in_with_valid_login_credentials()
+  When User enters a valid Login Credentials                                                        # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+  When User enters a valid Login Credentials                                                                     # com.sos.stepDefinitions.RAStampedAgreement.user_enters_a_valid_phone_number_name_and_email()
+  Then the user is logged in or signed up "Successfully"                                                         # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  Then the user is logged in or signed up "Successfully"                                            # com.sos.stepDefinitions.RAStampedAgreement.validate_the_outcome(java.lang.String)
+  When User Enters valid PhoneNumber, Name, and email                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()
+  Given User Landed on the Legal Services HomePage                                                  # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  Given User is on the Legal Services Page                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_is_on_the_legal_services_page()
+  Given User Landed on the Legal Services HomePage                                                    # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  And User clicks on login continue button                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()
+  Given User Navigates to the Legal Services Page                                                                                # com.sos.stepDefinitions.RAEstampAgreementFlow.user_navigates_to_the_legal_services_page()
+  Given User Landed on the Legal Services HomePage                                                    # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  Given User Landed on the Legal Services HomePage                                                               # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  Given User Navigates to the Legal Services Page                                                                                # com.sos.stepDefinitions.RAEstampAgreementFlow.user_navigates_to_the_legal_services_page()
+  Given User Landed on the Legal Services HomePage                                                  # com.sos.stepDefinitions.RAStampedAgreement.user_landed_on_the_legal_services_home_page()
+  When User Enters valid PhoneNumber, Name, and email                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()
+  And User clicks on login continue button                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()
+  When User Selects a "Bangalore" from the available options                                        # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  When User selects a city from the available options                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_a_city_from_the_available_options()
+  When User Selects a "Bangalore" from the available options                                          # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  And User click on the Check Price button                                                          # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  And User clicks on the Check Price button                                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_the_check_price_button()
+  And User click on the Check Price button                                                            # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  When User Selects a "Bangalore" from the available options                                          # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  When User Selects a "Bangalore" from the available options                                                     # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  When User Selects a "Bangalore" from the available options                                        # com.sos.stepDefinitions.RAStampedAgreement.user_selects_a_from_the_available_options(java.lang.String)
+  And User Selects the "E-Stamped Agreement" package                                                # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  And User click on the Check Price button                                                            # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  And User selects the "Upload your Draft" package                                                                # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(java.lang.String)
+  And User Selects the "E-Stamped Agreement" package                                                  # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  And User click on the Check Price button                                                                       # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  And User click on the Check Price button                                                          # com.sos.stepDefinitions.RAStampedAgreement.userClicksCheckPrice()
+  And User uploads the Old or Existing Rent Agreement draft                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_uploads_the_old_or_existing_rent_agreement_draft()
+  When User Clicks on the Check Price button and Selects the "E-Stamped Agreement" Package                                       # com.sos.stepDefinitions.RAEstampAgreementFlow.user_clicks_on_the_check_price_button_and_selects_the_package(java.lang.String)
+  And User Selects the "E-Stamped Agreement" package                                                  # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  When User Clicks on the Check Price button and Selects the "E-Stamped Agreement" Package                                       # com.sos.stepDefinitions.RAEstampAgreementFlow.user_clicks_on_the_check_price_button_and_selects_the_package(java.lang.String)
+  And User Selects the "E-Stamped Agreement" package                                                             # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  And User Selects the "E-Stamped Agreement" package                                                # com.sos.stepDefinitions.RAStampedAgreement.userSelectsPackage(java.lang.String)
+  And Selects Stamp Paper "<stamPaper>" option from the dropdowns                                   # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  Given User is on the Legal Services Page                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_is_on_the_legal_services_page()
+  And Selects Stamp Paper "₹ 100 Stamp" option from the dropdowns                                     # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  Given User is on the Legal Services Page                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_is_on_the_legal_services_page()
+  And User selects Stamp Paper option                                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_stamp_paper_option()
+  And Selects Stamp Paper "<stamPaper>" option from the dropdowns                                     # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  And Selects Stamp Paper "<stamPaper>" option from the dropdowns                                                # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  And Selects Stamp Paper "<stamPaper>" option from the dropdowns                                   # com.sos.stepDefinitions.RAStampedAgreement.selects_stamp_paper_option_from_the_dropdowns(java.lang.String)
+  And Selecting Rent Agreement Start Date                                                           # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  And Selecting Rent Agreement Start Date                                                             # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  And User selects Rent Agreement Start Date                                                                      # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_rent_agreement_start_date()
+  And Selecting Rent Agreement Start Date                                                             # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  And Selecting Rent Agreement Start Date                                                                        # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  And Selecting Rent Agreement Start Date                                                           # com.sos.stepDefinitions.RAStampedAgreement.userSelectsRentStartDate()
+  When User selects a city from the available options                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_a_city_from_the_available_options()
+  When User selects a city from the available options                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_a_city_from_the_available_options()
+  And User clicks on the Check Price button                                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_the_check_price_button()
+  And User clicks on the Check Price button                                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_the_check_price_button()
+  And User enters LandlordName and TenantName                                                                     # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_landlord_name_and_tenant_name()
+  And User selects the "Upload your Draft" package                                                                # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(java.lang.String)
+      java.lang.AssertionError: Failed to click on element [By.xpath: //div[@class='title'] [text()='Upload your Draft']//following::button[text()='Select']]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:191)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectPackage(RentalServiceWebPage.java:818)
+	at com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(RAUploadYourDraft.java:75)
+	at ✽.User selects the "Upload your Draft" package(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:28)
+
+  And User uploads the Old or Existing Rent Agreement draft                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_uploads_the_old_or_existing_rent_agreement_draft()
+  And User selects Stamp Paper option                                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_stamp_paper_option()
+  And User selects Rent Agreement Start Date                                                                      # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_rent_agreement_start_date()
+  And User enters LandlordName and TenantName                                                                     # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_landlord_name_and_tenant_name()
+  And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_addons_clicks_on_save_and_continue_button()
+  And User clicks on Add New button in Summary                                                                    # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_add_new_button_in_summary()
+  And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"                # com.sos.stepDefinitions.RAUploadYourDraft.user_submits_delivery_details_name_email_phone_and(java.lang.String,java.lang.String)
+  Then Validate the checked icon and delivery Receiver name in summary                                            # com.sos.stepDefinitions.RAUploadYourDraft.validate_the_checked_icon_and_delivery_receiver_name_in_summary()
+
+    Embedding Verify_Add_Delivery_Address_Functionality_in_Upload_your_draft_flow [image/png 87431 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="select-package btn btn-default" id="" type="button" style="border: 3px solid red;">...</button> is not clickable at point (1307, 543). Other element would receive the click: <div class="login-signup__backdrop"></div>
+  (Session info: chrome=117.0.5938.149)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fbaab8be7f8bc117d767fadafc29b95, clickElement {id=4579DCB48C9B9C5BCC33DB06447D7970_element_195}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35543/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (5fbaab8be7f8bc117d767fadafc29b95)] -> xpath: //div[@class='title'] [text()='Upload your Draft']//following::button[text()='Select']]
+Session ID: 5fbaab8be7f8bc117d767fadafc29b95
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:187)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectPackage(RentalServiceWebPage.java:818)
+	at com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(RAUploadYourDraft.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Generate Estimate&quot;, &quot;Verify the Non-MH Rental Agreements flow&quot;](4)" classname="com.sos.testRunner.TestNG_TestRunner" time="13.333">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class*=&apos;current-month&apos;]&quot;}&#10;  (Session info: chrome=117.0.5938.149)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1b5a67b0f2ec15e9cc682922031082d7, findElement {using=css selector, value=div[class*=&apos;current-month&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45513/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1b5a67b0f2ec15e9cc682922031082d7" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='current-month']"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b5a67b0f2ec15e9cc682922031082d7, findElement {using=css selector, value=div[class*='current-month']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45513/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b5a67b0f2ec15e9cc682922031082d7
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.genrateEstimate(RentalServiceWebPage.java:153)
+	at com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_stamp_agreement_duration_and_notarised_agreement_e_sign_and_delivery_addons(RAEstampAgreementFlow.java:61)
+	at ✽.User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/NewContiuneFLow.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: MakePayment functionaliy                                                                                # src/test/resources/HSFeatures/UploadYourDraft.feature:82
+Browser value is: chrome
+  And User selects the "Upload your Draft" package                                                                # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(java.lang.String)
+  And User uploads the Old or Existing Rent Agreement draft                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_uploads_the_old_or_existing_rent_agreement_draft()
+  And User selects Stamp Paper option                                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_stamp_paper_option()
+  And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button # com.sos.stepDefinitions.RAStampedAgreement.user_selects_notarized_agreement_e_sign_delivery_addons_and_clicks_on_save_and_continue_button()
+  And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons # com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_stamp_agreement_duration_and_notarised_agreement_e_sign_and_delivery_addons(java.lang.String,java.lang.String,int)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='current-month']"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b5a67b0f2ec15e9cc682922031082d7, findElement {using=css selector, value=div[class*='current-month']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45513}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45513/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b5a67b0f2ec15e9cc682922031082d7
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.genrateEstimate(RentalServiceWebPage.java:153)
+	at com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_stamp_agreement_duration_and_notarised_agreement_e_sign_and_delivery_addons(RAEstampAgreementFlow.java:61)
+	at ✽.User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/NewContiuneFLow.feature:10)
+
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  And Lands on Property Detail Page and Enters Property Details:                                                                 # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_property_detail_page_and_enters_property_details(io.cucumber.datatable.DataTable)
+    | Floor Number     | 10     |
+    | BHK Type         | 4 BHK  |
+    | Type of Property | Shop   |
+    | Shop Number      | 301    |
+    | Building Name    | ABC    |
+    | Locality         | HSR    |
+    | Pincode          | 560035 |
+  And Click and Add Number of <2> Bathrooms                                                                                      # com.sos.stepDefinitions.RAEstampAgreementFlow.click_and_add_number_of_bathrooms(java.lang.Integer)
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  Then Lands on Landlord Detail Page and Enters Landlord Details:                                                                # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_landlord_detail_page_and_enters_landlord_details(io.cucumber.datatable.DataTable)
+    | Full Name               | Milind G         |
+    | Age                     | 30               |
+    | Phone                   | 9503333700       |
+    | Permanent Address Full  | A-213, Bangalore |
+    | PAN Number (ABCDE1234F) | ABCDE4321F       |
+    | Email Address           | mg@gmail.com     |
+    | PIN Code                | 560035           |
+    | Party Type              | Owner            |
+    | Gender                  | Male             |
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  Then Lands on Tenant Detail Page and Enters Tenant Details:                                                                    # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_tenant_detail_page_and_enters_tenant_details(io.cucumber.datatable.DataTable)
+    | Full Name               | Sandhya R        |
+    | Age                     | 25               |
+    | Phone                   | 9503333701       |
+    | Permanent Address Full  | B-111, Bangalore |
+    | PAN Number (ABCDE1234F) | ABCDE4321G       |
+    | Email Address           | gm@gmail.com     |
+    | PIN Code                | 560035           |
+    | Party Type              | Tenant           |
+    | Gender                  | Female           |
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  Then Lands on Contract Details Page and Enters Contract Details:                                                               # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_contract_details_page_and_enters_contract_details(io.cucumber.datatable.DataTable)
+    | Agreement Duration (In months) | 2 Months |
+    | Rent Amount                    | 200000   |
+    | Refundable Deposit             | 1200000  |
+    | Minimum Lockin Period          | 3        |
+  And User Enters Deposit Payment Details,                                                                                       # com.sos.stepDefinitions.RAEstampAgreementFlow.user_enters_deposit_payment_details()
+  And User Selects Rent Day, Notice Period, and Amenities                                                                        # com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_rent_day_notice_period_and_amenities()
+  And Clicks on Save and Continue button and Navigate to SummaryPage                                                             # com.sos.stepDefinitions.RAEstampAgreementFlow.clickSaveAndContinueAndNavigateToSummaryPage()
+  And Clicking on Add New button and submitting delivery Address "A 404 Bren Mercury, Bangalore" and "560035"                    # com.sos.stepDefinitions.RAEstampAgreementFlow.clicking_on_add_new_button_and_submitting_delivery_address_and(java.lang.String,java.lang.String)
+  And Clicking on Number of Extra copy "2" button.                                                                               # com.sos.stepDefinitions.RAEstampAgreementFlow.clicking_on_number_of_extra_copy_button(java.lang.String)
+  Then Validate Agreement and Quotation Pricing Details in Summary Page                                                          # com.sos.stepDefinitions.RAEstampAgreementFlow.validate_agreement_and_quotation_pricing_details_in_summary_page()
+
+    Embedding Generate_Estimate [image/png 97429 bytes]
+
+  Given User Landed on HomePage                                                                                   # com.sos.stepDefinitions.RAUploadYourDraft.user_landed_on_home_page()
+]]></system-out>
+    <system-err><![CDATA[Waited for element located by [By.cssSelector: div[class*='current-month']] for 3 seconds
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate the functionality for generating a rental agreement estimate with addons&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](5)" classname="com.sos.testRunner.TestNG_TestRunner" time="17.592">
+    <system-out><![CDATA[  And User selects Notarized Agreement, eSign, delivery Addons and clicks on Save and Continue button # com.sos.stepDefinitions.RAStampedAgreement.user_selects_notarized_agreement_esign_delivery_addons_and_clicks_on_save_and_continue_button()
+  And clicking on the summaryContent and redirects on the SummaryPage                               # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  And User selects Notarized Agreement, eSign, delivery Addons and clicks on Save and Continue button # com.sos.stepDefinitions.RAStampedAgreement.user_selects_notarized_agreement_esign_delivery_addons_and_clicks_on_save_and_continue_button()
+  And clicking on the summaryContent and redirects on the SummaryPage                                 # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  Then validating the title "E-Stamped Agreement" and Price details in SummaryPage                    # com.sos.stepDefinitions.RAStampedAgreement.validating_the_title_and_price_details_in_summary_page(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Upload your Draft Functionality without Addons&quot;, &quot;Verify Upload your Draft Upload Functionality&quot;](6)" classname="com.sos.testRunner.TestNG_TestRunner" time="23.245">
+    <failure message="expected [1029] but found [1011]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [1029] but found [1011]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details(RAUploadYourDraft.java:123)
+	at ✽.validate the Quotation Price Details(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:22)
+]]></failure>
+    <system-out><![CDATA[  And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button # com.sos.stepDefinitions.RAStampedAgreement.user_selects_notarized_agreement_e_sign_delivery_addons_and_clicks_on_save_and_continue_button()
+  And User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button              # com.sos.stepDefinitions.RAStampedAgreement.user_selects_notarized_agreement_e_sign_delivery_addons_and_clicks_on_save_and_continue_button()
+  And clicking on Edit "Tenant Detail"                                                              # com.sos.stepDefinitions.RAStampedAgreement.clickingOn(java.lang.String)
+  And clicking on the summaryContent and redirects on the SummaryPage                                 # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  And User selects Rent Agreement Start Date                                                                      # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_rent_agreement_start_date()
+  And clicking on the summaryContent and redirects on the SummaryPage                               # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  And clicking on the summaryContent and redirects on the SummaryPage                                            # com.sos.stepDefinitions.RAStampedAgreement.clicking_on_the_summary_content_and_redirects_on_the_summary_page()
+  And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_addons_clicks_on_save_and_continue_button()
+  Then Verify the Title of the selected "Upload your Draft" Package is displayed on the Summary Page              # com.sos.stepDefinitions.RAUploadYourDraft.verify_the_title_of_the_selected_package_is_displayed_on_the_summary_page(java.lang.String)
+  Then validate the Quotation Price Details                                                                       # com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details()
+      java.lang.AssertionError: expected [1029] but found [1011]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details(RAUploadYourDraft.java:123)
+	at ✽.validate the Quotation Price Details(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:22)
+
+
+    Embedding Verify_Upload_your_Draft_Functionality_without_Addons [image/png 67546 bytes]
+
+  And clicking on Edit "Property Detail"                                                              # com.sos.stepDefinitions.RAStampedAgreement.clickingOn(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the Tenant Detail Edit Functionality from Summary&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](7)" classname="com.sos.testRunner.TestNG_TestRunner" time="52.244">
+    <system-out><![CDATA[  And clicking on Edit "Landlord Detail"                                                            # com.sos.stepDefinitions.RAStampedAgreement.clickingOn(java.lang.String)
+  And clicking on Edit "Contract Detail"                                                                         # com.sos.stepDefinitions.RAStampedAgreement.clickingOn(java.lang.String)
+  And User Selects Stamp "₹ 100 Stamp", Agreement Duration "October 2023", and Notarised Agreement, E-Sign 2 and Delivery addons # com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_stamp_agreement_duration_and_notarised_agreement_e_sign_and_delivery_addons(java.lang.String,java.lang.String,int)
+  And User enters LandlordName and TenantName                                                                     # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_landlord_name_and_tenant_name()
+  When User Enters valid PhoneNumber, Name, and email                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_valid_phone_number_name_and_email()
+  And User clicks on login continue button                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_login_continue_button()
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  And User Enters Property Details:                                                                   # com.sos.stepDefinitions.RAStampedAgreement.user_enters_property_details(io.cucumber.datatable.DataTable)
+    | Floor Number     | 10     |
+    | BHK Type         | 4 BHK  |
+    | Type of Property | Shop   |
+    | Shop Number      | 301    |
+    | Building Name    | ABC    |
+    | Locality         | HSR    |
+    | Pincode          | 560035 |
+  Given User is on the Legal Services Page                                                                        # com.sos.stepDefinitions.RAUploadYourDraft.user_is_on_the_legal_services_page()
+  And User Enters Tenant Details:                                                                   # com.sos.stepDefinitions.RAStampedAgreement.userEntersTenantDetailsDetails(io.cucumber.datatable.DataTable)
+    | Full Name               | Sandhya R      |
+    | Age                     | 25             |
+    | Phone                   | 9503333701     |
+    | Permanent Address Full  | B-111,Banglore |
+    | PAN Number (ABCDE1234F) | ABCDE4321G     |
+    | Email Address           | gm@gmail.com   |
+    | PIN Code                | 560035         |
+    | Party Type              | Tenant         |
+    | Gender                  | Female         |
+SuccesFUlly Validated Tenant Details
+  And Clicking on Add Btn for adding Number of Bathrooms 3                                            # com.sos.stepDefinitions.RAStampedAgreement.clickingOnAddBtnForNumberOfBathrooms(int)
+SuccesFUlly Validated Property Details
+  And Lands on Property Detail Page and Enters Property Details:                                                                 # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_property_detail_page_and_enters_property_details(io.cucumber.datatable.DataTable)
+    | Floor Number     | 10     |
+    | BHK Type         | 4 BHK  |
+    | Type of Property | Shop   |
+    | Shop Number      | 301    |
+    | Building Name    | ABC    |
+    | Locality         | HSR    |
+    | Pincode          | 560035 |
+  And User Enters Landlord Details:                                                                 # com.sos.stepDefinitions.RAStampedAgreement.userEntersLandlordDetailsDetails(io.cucumber.datatable.DataTable)
+    | Full Name               | Milind G       |
+    | Age                     | 30             |
+    | Phone                   | 9503333700     |
+    | Permanent Address Full  | A-213,Banglore |
+    | PAN Number (ABCDE1234F) | ABCDE4321F     |
+    | Email Address           | mg@gmail.com   |
+    | PIN Code                | 560035         |
+    | Party Type              | Owner          |
+    | Gender                  | Male           |
+SuccesFUlly Validated Landlord Details
+  Then validating the Tenant Details in Summary                                                     # com.sos.stepDefinitions.RAStampedAgreement.validateTenantDetails()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the property Details Edit Functionality from Summary&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](8)" classname="com.sos.testRunner.TestNG_TestRunner" time="54.103">
+    <system-out><![CDATA[  And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_addons_clicks_on_save_and_continue_button()
+  Then validating the Property Details in Summary                                                     # com.sos.stepDefinitions.RAStampedAgreement.validateAddressDetails()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the Landlord Detail Edit Functionality from Summary&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](9)" classname="com.sos.testRunner.TestNG_TestRunner" time="57.899">
+    <system-out><![CDATA[  And User clicks on Add New button in Summary                                                                    # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_add_new_button_in_summary()
+  When User selects a city from the available options                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_a_city_from_the_available_options()
+  Then validating the Landlord Details in Summary                                                   # com.sos.stepDefinitions.RAStampedAgreement.validateLanlordDetails()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Add Add Extra Copy Functionaliy in Upload your draft flow&quot;, &quot;Verify Upload your Draft Upload Functionality&quot;](10)" classname="com.sos.testRunner.TestNG_TestRunner" time="66.457">
+    <failure message="expected [1872] but found [1854]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:55)
+]]></failure>
+    <system-out><![CDATA[  And Click and Add Number of <2> Bathrooms                                                                                      # com.sos.stepDefinitions.RAEstampAgreementFlow.click_and_add_number_of_bathrooms(java.lang.Integer)
+  And User clicks on the Check Price button                                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_the_check_price_button()
+  And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"                # com.sos.stepDefinitions.RAUploadYourDraft.user_submits_delivery_details_name_email_phone_and(java.lang.String,java.lang.String)
+  And User selects the "Upload your Draft" package                                                                # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_the_package(java.lang.String)
+  And User clicks on Number of Extracopy "2" button.                                                              # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_number_of_extracopy_button(java.lang.String)
+  Then validate the Quotation Price Details After adding extracopy                                                # com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss()
+      java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:55)
+
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+
+    Embedding Verify_Add_Add_Extra_Copy_Functionaliy_in_Upload_your_draft_flow [image/png 72551 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;MakePayment functionaliy&quot;, &quot;Verify Upload your Draft Upload Functionality&quot;](11)" classname="com.sos.testRunner.TestNG_TestRunner" time="128.93">
+    <failure message="expected [1872] but found [1854]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:74)
+]]></failure>
+    <system-out><![CDATA[  And User uploads the Old or Existing Rent Agreement draft                                                       # com.sos.stepDefinitions.RAUploadYourDraft.user_uploads_the_old_or_existing_rent_agreement_draft()
+  And User selects Stamp Paper option                                                                             # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_stamp_paper_option()
+  And User selects Rent Agreement Start Date                                                                      # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_rent_agreement_start_date()
+  And User Enters Contract Details:                                                                              # com.sos.stepDefinitions.RAStampedAgreement.user_enters_contract_details(io.cucumber.datatable.DataTable)
+    | Agreement Duration (In months) | 2 Months |
+    | Rent Amount                    | 200000   |
+    | Refundable Deposit             | 1200000  |
+    | Minimum Lockin Period          | 3        |
+  And User clicking on Add New button in SummaryPage                                                             # com.sos.stepDefinitions.RAStampedAgreement.user_clicks_on_add_new_button_in_summary()
+  And User enters LandlordName and TenantName                                                                     # com.sos.stepDefinitions.RAUploadYourDraft.user_enters_landlord_name_and_tenant_name()
+  Then Lands on Landlord Detail Page and Enters Landlord Details:                                                                # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_landlord_detail_page_and_enters_landlord_details(io.cucumber.datatable.DataTable)
+    | Full Name               | Milind G         |
+    | Age                     | 30               |
+    | Phone                   | 9503333700       |
+    | Permanent Address Full  | A-213, Bangalore |
+    | PAN Number (ABCDE1234F) | ABCDE4321F       |
+    | Email Address           | mg@gmail.com     |
+    | PIN Code                | 560035           |
+    | Party Type              | Owner            |
+    | Gender                  | Male             |
+  And User submiting delivery details "A 404 Bren Mercury,Bangalore" and "560035"                                # com.sos.stepDefinitions.RAStampedAgreement.user_submits_delivery_details_and(java.lang.String,java.lang.String)
+  And User clicking on Number of Extracopy "2" button.                                                           # com.sos.stepDefinitions.RAStampedAgreement.user_clicks_on_number_of_extracopy_button(java.lang.String)
+Convenince Charge :379
+Stamp Duty Amount :100
+extraTwoCopyPrice :843
+Two Extra Copy Amount :843
+ Delivery Amount :150
+E-Sign Agreement Amount :100
+Notarised Agreement  Amount :300
+Discount Amount :18
+Sum of LineItem Amount :1854
+Total Payeble Amount :1854
+  Then Validate the Quotation Pricing Details After adding extracopy                                             # com.sos.stepDefinitions.RAStampedAgreement.validate_the_quotation_price_detailss()
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  And User clicking on  PayNow button                                                                            # com.sos.stepDefinitions.RAStampedAgreement.user_clicking_on_pay_now_button()
+  And User selects Notarized Agreement Addon, eSign Addon, delivery Addon, and clicks on Save and Continue button # com.sos.stepDefinitions.RAUploadYourDraft.user_selects_addons_clicks_on_save_and_continue_button()
+  And User clicks on Add New button in Summary                                                                    # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_add_new_button_in_summary()
+  And User entering Payment Details "4111-1111-1111-1111" "02/44" "121"  "Milind" and clicks on Make Payment Btn # com.sos.stepDefinitions.RAStampedAgreement.paymentDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User submits delivery details name, email, phone "A 404 Bren Mercury,Bangalore" and "560035"                # com.sos.stepDefinitions.RAUploadYourDraft.user_submits_delivery_details_name_email_phone_and(java.lang.String,java.lang.String)
+  And User clicks on Number of Extracopy "2" button.                                                              # com.sos.stepDefinitions.RAUploadYourDraft.user_clicks_on_number_of_extracopy_button(java.lang.String)
+  Then validate the Quotation Price Details After adding extracopy                                                # com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss()
+      java.lang.AssertionError: expected [1872] but found [1854]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+	at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:74)
+
+  And User clicking on  PayButton                                                                                 # com.sos.stepDefinitions.RAUploadYourDraft.user_clicking_on_pay_button()
+  And User entered "4111-1111-1111-1111" "0244" "121"  "Milind" and clicks on Make Payment Btn                    # com.sos.stepDefinitions.RAUploadYourDraft.user_entered_and_clicks_on_make_payment_btn(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User Enter "1234" and click on SubmitButton                                                                 # com.sos.stepDefinitions.RAUploadYourDraft.user_enter_and_click_on_submit_button(java.lang.String)
+  Then Validating the Order Confirmation in  MyBookings                                                           # com.sos.stepDefinitions.RAUploadYourDraft.validating_the_order_confirmation_in_my_bookings()
+
+    Embedding MakePayment_functionaliy [image/png 72751 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the Contract Detail Edit Functionality from Summary&quot;, &quot;Verify the flow for Non-MH Rental Agreements&quot;](12)" classname="com.sos.testRunner.TestNG_TestRunner" time="145.644">
+    <system-out><![CDATA[  Then Lands on Tenant Detail Page and Enters Tenant Details:                                                                    # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_tenant_detail_page_and_enters_tenant_details(io.cucumber.datatable.DataTable)
+    | Full Name               | Sandhya R        |
+    | Age                     | 25               |
+    | Phone                   | 9503333701       |
+    | Permanent Address Full  | B-111, Bangalore |
+    | PAN Number (ABCDE1234F) | ABCDE4321G       |
+    | Email Address           | gm@gmail.com     |
+    | PIN Code                | 560035           |
+    | Party Type              | Tenant           |
+    | Gender                  | Female           |
+  And User Entering "1234" and click on SubmitButton                                                             # com.sos.stepDefinitions.RAStampedAgreement.user_enter_and_click_on_submit_button(java.lang.String)
+  And Clicks on Save and Continue button                                                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.clicks_on_save_and_continue_button()
+  Then Validating the Order Confirmation status in MyBooking                                                     # com.sos.stepDefinitions.RAStampedAgreement.validating_the_order_confirmation_status_in_my_booking()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Make Payment and Validate Order Status&quot;, &quot;Verify the Non-MH Rental Agreements flow&quot;](13)" classname="com.sos.testRunner.TestNG_TestRunner" time="245.346">
+    <system-out><![CDATA[  Then Lands on Contract Details Page and Enters Contract Details:                                                               # com.sos.stepDefinitions.RAEstampAgreementFlow.lands_on_contract_details_page_and_enters_contract_details(io.cucumber.datatable.DataTable)
+    | Agreement Duration (In months) | 2 Months |
+    | Rent Amount                    | 200000   |
+    | Refundable Deposit             | 1200000  |
+    | Minimum Lockin Period          | 3        |
+  And User Enters Deposit Payment Details,                                                                                       # com.sos.stepDefinitions.RAEstampAgreementFlow.user_enters_deposit_payment_details()
+  And User Selects Rent Day, Notice Period, and Amenities                                                                        # com.sos.stepDefinitions.RAEstampAgreementFlow.user_selects_rent_day_notice_period_and_amenities()
+  And Clicks on Save and Continue button and Navigate to SummaryPage                                                             # com.sos.stepDefinitions.RAEstampAgreementFlow.clickSaveAndContinueAndNavigateToSummaryPage()
+  And Clicking on Add New button and submitting delivery Address "A 404 Bren Mercury, Bangalore" and "560035"                    # com.sos.stepDefinitions.RAEstampAgreementFlow.clicking_on_add_new_button_and_submitting_delivery_address_and(java.lang.String,java.lang.String)
+extraTwoCopyPrice :883
+extraTwoCopyPrice :589
+  And Clicking on Number of Extra copy "2" button.                                                                               # com.sos.stepDefinitions.RAEstampAgreementFlow.clicking_on_number_of_extra_copy_button(java.lang.String)
+Convenince Charge :379
+Stamp Duty Amount :100
+extraTwoCopyPrice :883
+Two Extra Copy Amount :882
+ Delivery Amount :150
+E-Sign Agreement Amount :150
+Notarised Agreement  Amount :300
+Tenant Verification Amount :99
+Discount Amount :18
+Sum of LineItem Amount :2042
+Total Payeble Amount :2042
+  Then Validate Agreement and Quotation Pricing Details in Summary Page                                                          # com.sos.stepDefinitions.RAEstampAgreementFlow.validate_agreement_and_quotation_pricing_details_in_summary_page()
+  When Clicking on Pay button and Navigate to Payment Dashboard                                                                  # com.sos.stepDefinitions.RAEstampAgreementFlow.clicking_on_pay_button_and_navigate_to_payment_dashboard()
+  And User entering the Payment Details "4111-1111-1111-1111" "02/44" "121"  "Milind" and clicks on Make Payment Btn             # com.sos.stepDefinitions.RAEstampAgreementFlow.user_entering_the_payment_details_and_clicks_on_make_payment_btn(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User Entering OTP "1234" and click on SubmitBtn                                                                            # com.sos.stepDefinitions.RAEstampAgreementFlow.user_entering_otp_and_click_on_submit_btn(java.lang.String)
+  Then Validating the Payment and Order Confirmation status in MyBooking                                                         # com.sos.stepDefinitions.RAEstampAgreementFlow.validating_the_payment_and_order_confirmation_status_in_my_booking()
+]]></system-out>
+  </testcase>
+</testsuite>

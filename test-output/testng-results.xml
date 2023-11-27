@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-27T22:20:41 IST" name="Default suite" finished-at="2023-11-27T22:26:42 IST" duration-ms="361776">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-27T22:20:41 IST" name="Default test" finished-at="2023-11-27T22:26:42 IST" duration-ms="361776">
+      <class name="com.sos.testRunner.TestNG_TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:41 IST" name="setUpClass" finished-at="2023-11-27T22:20:41 IST" duration-ms="863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@33899f7a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:21:28 IST" duration-ms="46432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["New User SignUp Verification"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Upload your Draft Upload Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:23:38 IST" duration-ms="176546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Landlord Detail Edit Functionality from Summary"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:24:59 IST" duration-ms="257127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Contract Detail Edit Functionality from Summary"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:26:00 IST" duration-ms="318201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Generate Estimate"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the Non-MH Rental Agreements flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:22:59 IST" duration-ms="137503" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Upload your Draft Functionality without Addons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Upload your Draft Upload Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1029] but found [1011]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1029] but found [1011]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_details(RAUploadYourDraft.java:123)
+at ✽.validate the Quotation Price Details(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:26:42 IST" duration-ms="360414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Make Payment and Validate Order Status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the Non-MH Rental Agreements flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:23:34 IST" duration-ms="172709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the property Details Edit Functionality from Summary"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:22:32 IST" duration-ms="110672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the functionality for generating a rental agreement estimate without any addons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:22:56 IST" duration-ms="134206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the functionality for generating a rental agreement estimate with addons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:23:38 IST" duration-ms="176707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Tenant Detail Edit Functionality from Summary"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:21:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:23:40 IST" duration-ms="132227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add Delivery Address Functionality in Upload your draft flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Upload your Draft Upload Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:22:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:24:37 IST" duration-ms="124909" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add Add Extra Copy Functionaliy in Upload your draft flow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Upload your Draft Upload Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1872] but found [1854]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1872] but found [1854]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at com.sos.stepDefinitions.RAUploadYourDraft.validate_the_quotation_price_detailss(RAUploadYourDraft.java:174)
+at ✽.validate the Quotation Price Details After adding extracopy(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/UploadYourDraft.feature:55)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:22:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-27T22:25:49 IST" duration-ms="173508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["MakePayment functionaliy"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Upload your Draft Upload Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-11-27T22:26:42 IST" name="tearDownClass" finished-at="2023-11-27T22:26:42 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sos.testRunner.TestNG_TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
