@@ -5,12 +5,14 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.Random;
+import java.util.Set;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,6 +27,13 @@ public class CommonSelenium {
 		this.driver = driver;
 	}
 
+	 public void scrollToElement(WebDriver driver, By locator,int yOffset) {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("window.scrollTo(0, 0);");
+	        js.executeScript("window.scrollBy(0, arguments[0]);", yOffset);
+	 }
+	
+	
 	public static WebElement waitForElementToBeClickable(WebDriver driver, By locator, int seconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -191,6 +200,22 @@ public class CommonSelenium {
 			Assert.fail("Failed to click on element [" + locator + "]");
 		}
 	}
+	 
+	public void doubleClick(By locator) {
+        try {
+            waitFor(2);
+            WebElement element = driver.findElement(locator);
+            drawBorder(driver, element);
+
+            Actions actions = new Actions(driver);
+            actions.doubleClick(element).build().perform();
+
+            waitFor(1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("Failed to double click on element [" + locator + "]");
+        }
+    }
 
 
 	public void click(WebElement element) {
@@ -231,6 +256,24 @@ public class CommonSelenium {
 	        }
 	    }
 	 
+	 public void switchToChildWindow()
+	    {
+	        String parentWindow = driver.getWindowHandle();
+	        Set<String> handles = driver.getWindowHandles();
+	        for (String windowHandle : handles)
+	        {
+	            if (!windowHandle.equals(parentWindow))
+	            {
+	                driver.switchTo().window(windowHandle);
+
+	                //closing child window
+	                driver.switchTo().window(parentWindow); //cntrl to parent window
+	                driver.close();
+	                driver.switchTo().window(windowHandle);
+	                System.out.println("closing Parent window and control on the new open window");
+	            }
+	        }
+	    }
 	 public void scrollUp() {
 		    JavascriptExecutor js = (JavascriptExecutor) driver;
 		    js.executeScript("window.scrollBy(0, -1750)");

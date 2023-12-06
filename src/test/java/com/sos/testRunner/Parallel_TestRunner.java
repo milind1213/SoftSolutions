@@ -17,3 +17,4 @@ public class Parallel_TestRunner extends AbstractTestNGCucumberTests {
 		return super.scenarios();
 	}
 }
+ 

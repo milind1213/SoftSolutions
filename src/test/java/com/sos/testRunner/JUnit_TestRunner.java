@@ -6,11 +6,12 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/Features" }, glue = { "stepDefinitions"},
-        plugin = {"pretty","html:reports/myreport.html", "html:reports/myreport.json",
-        		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
-        dryRun=false,
-        monochrome=true)
+@CucumberOptions(features = { "src/test/resources/HSFeatures/TenatVerifications.feature" }, 
+                 glue = {"com.sos.stepDefinitions" },
+                 plugin = { "pretty", "html:reports/Cucumber-Report.html",
+			   	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+				 dryRun = false,
+    			 monochrome = true)
 public class JUnit_TestRunner {
-	
+
 }

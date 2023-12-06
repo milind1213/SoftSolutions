@@ -1,10 +1,19 @@
 package com.sos.CommonFactory;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
 import com.sos.Utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,9 +32,18 @@ public class WebBrowser {
 			ChromeOptions options = new ChromeOptions();
 			if (isHeadless) {
 				options.addArguments("--headless");
-				System.out.println("launching headless browser");
-			}
+				System.out.println(" launching headless browser");
+		 	}
+			Map<String, Object> prefs = new HashMap<>();
+			prefs.put("profile.default_content_settings.popups", 0);
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			options.setExperimentalOption("prefs", prefs);
 			options.addArguments("--force-device-scale-factor=0.8");
+			LoggingPreferences logs = new LoggingPreferences();
+			logs.enable(LogType.BROWSER, Level.ALL);
+	        options.setCapability("goog:loggingPrefs", logs);
+	        
 			tlDriver.set(new ChromeDriver(options));
 		} else {
 			System.out.println("Please pass the correct Browser value: " + browser);

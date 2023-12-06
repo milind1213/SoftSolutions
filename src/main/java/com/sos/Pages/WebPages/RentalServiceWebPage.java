@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -38,7 +40,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	private By oneDayDelivery = By.xpath(
 			"//div[@class='addon-card' and div[@class='addon-card-left']/div[@class='addon-title' and text()='Get One Day Delivery']]//div[@class='add-button ']");
 	private By proceedBtn = By.xpath("//button[contains(text(),'Proceed')]");
-	private By SaveAndContinueBtn = By.xpath("//button[contains(text(),'Save and Continue')]");
+	private By SaveAndConLocBtn = By.xpath("//*[contains(text(),'Save and Continue')]");
 	private By priviewBtn = By.xpath("//button[@class='btn btn-default'] [text()='Preview']");
 	private By esigns = By.xpath("//div[contains(@class, 'addon-card')]//div[contains(@class, 'esign-counter')]/div");
 	private By amountInput = By.xpath("//input[@id='ls-documentforms-amount-nbInput']");
@@ -71,33 +73,150 @@ public class RentalServiceWebPage extends CommonSelenium {
 
 	private By extraTwoCopy = By.xpath("(//div[contains(@class,'my-3')]//child::div[@class='flex gap-1'])[1]");
 	private By extraOneCopy = By.xpath("//div[contains(@class,'my-3')]//following::div[@class='flex gap-1']");
+	// TV
+	private By getStartedLocater = By.xpath("//div[contains(@class,'3W21B')]//*[@type='button'][text()='Get Started']");
+	private By moreLocater = By.xpath("//div[contains(text(),'more')]");
+	private By leaalServiceloc = By.xpath("//div[text()='Legal Services']");
+	private String leagalServices = "//div[@class='item-label' and text()='service']";
+	private String selectTvPackage = "(//div[@class='title' and text()='package']/ancestor::div[@class='item']//button[contains(@class,'select-package')])[1]";
+	private By selectIdCard = By.xpath("//div[contains(@class,'select') and text()='Select ID card']");
+	private String idTypesLocator = "//div[contains(@class,'select__menu-list')]//div[text()='idType']";
+	private By idNumberLoc = By.id("cardNumber");
+	private By tenantNameloc = By.name("name");
+	private By tenantPhoneloc = By.name("mobileNumber");
+	private By dobLoc = By.xpath("//input[@class='dob-field']");
+	private By tvSummaryTitle = By
+			.xpath("//div[@class='ls-summary-packagedescription desktop-mode']//div[@class='description-container']");
+	private By tvTotal = By.xpath("//div[@class='ls-summary-lineitem total']");
+    private By tenantGenderLoc= By.xpath("//div[text()='Select Gender']");	
+    
+    private By helpPopIframe = By.xpath("//iframe[@title='Zendesk Chat widget window']");
+    private By helpMinimise = By.xpath("//div[@title='Minimize']");
+    private By basicDetailsLabel = By.xpath("//span[contains(text(),'Basic Details')]");
+    
+    public void SaveAndContinueBtn() throws InterruptedException {
+        if (isElementPresent(driver,SaveAndConLocBtn)) {
+            click(SaveAndConLocBtn);
+            waitFor(1);
+        } else {
+            click(SaveAndConLocBtn);
+            waitFor(2);
+        }
+    }
+
+    
+	public void closingChatHelp() {
+		if (isElementPresent(driver, helpPopIframe)) {
+			driver.switchTo().frame(driver.findElement(helpPopIframe));
+			click(helpMinimise);
+			driver.switchTo().defaultContent();
+		} else {
+			System.out.println("Chat Help PopUp Not Appears");
+		}
+	}
+
+    public void tenantBasicVerificationDetails(String idType,String idNumber,String name,String phone,String dob,String fatherName) throws InterruptedException {
+    	driver.navigate().refresh();
+    	Thread.sleep(2000);
+    	click(selectIdCard);
+		click(driver.findElement(By.xpath(idTypesLocator.replace("idType", idType))));
+		sendKeys(idNumberLoc, idNumber);
+		sendKeys(tenantNameloc, name);
+		sendKeys(tenantPhoneloc, phone);
+		sendKeys(dobLoc, dob); 
+		waitFor(1);
+		scrollUpto(tenantGenderLoc);
+		click(tenantGenderLoc);
+		waitFor(1);
+		click(By.xpath("//div[@class='css-11unzgr nb-select__menu-list']//div[text()='Male']"));
+		sendKeys(By.name("fatherName"),fatherName);
+		click(SaveAndConLocBtn);
+		waitFor(2);
+	   }
+	   
+    public void verificationAddress(String flatNo,String locality,String pincode) {
+    	sendKeys(By.name("line1"),flatNo);
+		sendKeys(By.name("line2"),locality);
+		sendKeys(By.name("pincode"),pincode); 
+		click(SaveAndConLocBtn);
+    }
+    
+    public void referenceName(String refName,String refMobNumber,String refEmail) {
+    	sendKeys(By.name("refName"),refName);
+    	sendKeys(By.name("refMobileNumber"),refMobNumber);
+    	sendKeys(By.name("refEmail"),refEmail);
+    	click(SaveAndConLocBtn);
+    }
+    
+	public String getTvPackageTitle() {
+		String packageTitle = driver.findElement(tvSummaryTitle).getText();
+		return packageTitle;
+	}
+
+	public int getTvSummaryTotalAmount() {
+		String tvtotalText = driver.findElement(tvTotal).getText();
+		String[] amtTExt = tvtotalText.split("₹");
+		int Amount = Integer.parseInt(amtTExt[1]);
+		System.out.println("Total Amount : "+Amount);
+		return Amount;
+	}
+
+	public void selectTenantVerification(String service) {
+		waitForElementDisplay(driver, moreLocater, 2);
+		click(moreLocater);
+		waitFor(1);
+		click(leaalServiceloc);
+		waitForElementToBeClickable(driver, By.xpath(leagalServices.replace("service", service)), 3);
+		click(By.xpath(leagalServices.replace("service", service)));
+	}
+
+	public void selectTenantVerificationPackage(String tvpackage) {
+		if (!driver.findElement(getStartedLocater).isDisplayed()) {
+			waitFor(3);
+		}
+		click(getStartedLocater);
+		waitFor(2);
+		//click(driver.findElement(By.xpath(selectTvPackage.replace("package", tvpackage))));
+		click(driver.findElement(By.xpath("(//div[@class='title' and text()='"+tvpackage+"']/ancestor::div[@class='item']//button[contains(@class,'select-package')])[1]")));
+	}
+
+	public void tenantVerificationDetails(String idType, String idNumber, String name, String dob) {
+		click(selectIdCard);
+		click(driver.findElement(By.xpath(idTypesLocator.replace("idType", idType))));
+		sendKeys(idNumberLoc, idNumber);
+		sendKeys(tenantNameloc, name);
+		sendKeys(dobLoc, dob);
+	} 
+	
 	
 	public int getExtraTwoCopyPrice() {
 		int extraTwoCopyPrice = 0;
 		String extraTwoCopyText = driver.findElement(extraTwoCopy).getText();
 		String[] parts = extraTwoCopyText.split("\\₹", 3);
-		  if ( parts.length >= 3) {
-	            String result = parts[2].trim();
-	            extraTwoCopyPrice = Integer.parseInt(result);
-	            System.out.println("extraTwoCopyPrice :"+extraTwoCopyPrice);
-	        }
+		if (parts.length >= 3) {
+			String result = parts[2].trim();
+			extraTwoCopyPrice = Integer.parseInt(result);
+			System.out.println("extraTwoCopyPrice :" + extraTwoCopyPrice);
+		}
 		return extraTwoCopyPrice;
 	}
-	
+
 	public int getExtraOneCopyPrice() {
 		int extraOneCopyPrice = 0;
 		String extraOneCopyText = driver.findElement(extraOneCopy).getText();
 		String[] parts = extraOneCopyText.split("\\₹", 3);
-		  if ( parts.length >= 3) {
-	            String result = parts[2].trim();
-	            extraOneCopyPrice = Integer.parseInt(result);
-	            System.out.println("extraTwoCopyPrice :"+extraOneCopyPrice);
-	        }
+		if (parts.length >= 3) {
+			String result = parts[2].trim();
+			extraOneCopyPrice = Integer.parseInt(result);
+			System.out.println("extraTwoCopyPrice :" + extraOneCopyPrice);
+		}
 		return extraOneCopyPrice;
 	}
-	
-	
+
 	public void loginSignUpMethod(String mobileNumber, String otp, String username, String email) {
+		if (!driver.findElement(loginLinkBtn).isDisplayed()) {
+			waitFor(3);
+		}
 		click(loginLinkBtn);
 		waitForElementDisplay(driver, mobileInput, 2);
 		sendKeys(mobileInput, mobileNumber);
@@ -184,9 +303,6 @@ public class RentalServiceWebPage extends CommonSelenium {
 		click(proceedBtn);
 	}
 
-
-	
-	
 	public String getPropertyDetails() {
 		List<WebElement> raDetails = driver.findElements(raSummary);
 		if (!raDetails.isEmpty()) {
@@ -342,10 +458,10 @@ public class RentalServiceWebPage extends CommonSelenium {
 			value = selectMap.get(labelName);
 			waitForElementToBeClickable(driver, getFieldXpathLocator(genericSelectField, labelName), 2);
 			driver.findElement(getFieldXpathLocator(genericSelectField, labelName)).click();
-			waitFor(1);
+			waitFor(3);
 			waitForElementToBeClickable(driver, getFieldXpathLocator(nbSelectValXpath, value), 2);
 			driver.findElement(getFieldXpathLocator(nbSelectValXpath, value)).click();
-			waitFor(1);
+			waitFor(3);
 		}
 	}
 
@@ -375,9 +491,10 @@ public class RentalServiceWebPage extends CommonSelenium {
 		String value;
 		for (String labelName : selectMap.keySet()) {
 			value = selectMap.get(labelName);
+			waitForElementDisplay(driver, getFieldXpathLocator(genericSelectField, labelName), 3);
 			driver.findElement(getFieldXpathLocator(genericSelectField, labelName)).click();
 			waitFor(1);
-			waitForElementToBeClickable(driver,getFieldXpathLocator(nbSelectValXpath, value),3);
+			waitForElementDisplay(driver, getFieldXpathLocator(nbSelectValXpath, value), 3);
 			driver.findElement(getFieldXpathLocator(nbSelectValXpath, value)).click();
 			waitFor(1);
 		}
@@ -386,8 +503,6 @@ public class RentalServiceWebPage extends CommonSelenium {
 			sendKeys(getFieldXpathLocator(genericTxtField, labelName), value);
 		}
 	}
-
-	
 
 	public void selecNoticePeriod(String month) {
 		click(By.xpath("//div[@class='item  w-20pe p-1p' and text()='" + month + "']"));
@@ -498,6 +613,11 @@ public class RentalServiceWebPage extends CommonSelenium {
 		click(By.xpath("//div[@class='add-button'] | //span[text()=' Add New']"));
 	}
 
+	
+	
+	
+	
+	
 	public String getDeliveryRecversName() {
 
 		String reciversName = driver.findElement(By.xpath("//div[@class='address-info']")).getText();
@@ -578,11 +698,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 		sendKeys(tnameField, tenantName);
 	}
 
-	public void SaveAndContinueBtn() throws InterruptedException {
-		waitForElementToBeClickable(driver, SaveAndContinueBtn, 3);
-		click(SaveAndContinueBtn);
-		waitFor(1);
-	}
+	
 
 	public void refreshPage() {
 		driver.navigate().refresh();
@@ -801,12 +917,14 @@ public class RentalServiceWebPage extends CommonSelenium {
 	}
 
 	public void selectHSServiceType(String service) throws InterruptedException {
-		String serviceXpath = "//div[text()='service']".replace("service", service);
-		scrollClick(By.xpath(serviceXpath));
-		waitForNBLoad(30);
+		String serviceHSxpath = "//span[text()='service']".replace("service", service);
+		if (!driver.findElement(By.xpath(serviceHSxpath)).isDisplayed()) {
+			waitForElementToBeClickable(driver, By.xpath(serviceHSxpath), 5);
+		}
+		click(By.xpath(serviceHSxpath));
 		waitFor(3);
 	}
-
+	
 	public void checkPrices() {
 		By checkPriceBtn = By.cssSelector("div[class='action-button___3W21B'] button[type='button']");
 		click(checkPriceBtn);
@@ -827,6 +945,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	}
 
 	public void selectCityOrFinishYourAgreement(String city) {
+		   switchToChildWindow();
 		if (isElementPresent(driver, coninueAgreement)) {
 			click(coninueAgreement);
 		} else {
@@ -835,6 +954,13 @@ public class RentalServiceWebPage extends CommonSelenium {
 			waitFor(2);
 			click(By.xpath(cityXpath));
 		}
+	}
+
+	public void selectHSServiceCity(String city) {
+		switchToChildWindow();
+		String cityXpath = "//img[@alt='city']".replace("city", city);
+		waitForElementToBeClickable(driver, By.xpath(cityXpath), 5);
+		click(By.xpath(cityXpath));
 	}
 
 	public void enterAddharDetails(String aadharNumber) {

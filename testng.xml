@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.sos.testRunner.TestNG_TestRunner"/>
-      <class name="com.sos.testCases.TestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
