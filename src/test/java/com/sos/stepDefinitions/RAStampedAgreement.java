@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import com.github.javafaker.Faker;
 import com.sos.CommonFactory.WebBrowser;
@@ -31,13 +32,15 @@ public class RAStampedAgreement {
 	private String agreementDuration, rentAmount, refundableDeposit, minLocking;
 	private int stampDutyAmt = 100, ConvenienceAmt = 379, twoExtraCopyAmt = 843;
 	private int expectedTotal1 = 479, expectedTotal2 = 461;
-	private int deliveryPrice , PayebleTotal;
-
+	private int deliveryPrice, PayebleTotal;
 
 	@Given("User is on the HomePage")
 	public void user_is_on_the_home_page() {
 		user = new RentalServiceWebPage(WebBrowser.getDriver());
 		WebBrowser.getDriver().get(url);
+		if (!isWindowMaximized(WebBrowser.getDriver())) {
+			WebBrowser.getDriver().manage().window().maximize();
+		}
 	}
 
 	@When("User enters a valid Login Credentials")
@@ -107,7 +110,8 @@ public class RAStampedAgreement {
 	}
 
 	@When("User selects Notarized Agreement,eSign,delivery Addons and clicks on Save and Continue button")
-	public void user_selects_notarized_agreement_e_sign_delivery_addons_and_clicks_on_save_and_continue_button() throws InterruptedException {
+	public void user_selects_notarized_agreement_e_sign_delivery_addons_and_clicks_on_save_and_continue_button()
+			throws InterruptedException {
 		user.selectNotarizedAgreementAddon();
 		user.selectEsignAddon(1);
 		user.selectDeliveryAddonOption();
@@ -215,7 +219,8 @@ public class RAStampedAgreement {
 	}
 
 	@When("User selects Notarized Agreement, eSign, delivery Addons and clicks on Save and Continue button")
-	public void user_selects_notarized_agreement_esign_delivery_addons_and_clicks_on_save_and_continue_button() throws InterruptedException {
+	public void user_selects_notarized_agreement_esign_delivery_addons_and_clicks_on_save_and_continue_button()
+			throws InterruptedException {
 		user.selectNotarizedAgreementAddon();
 		user.selectEsignAddon(1);
 		user.selectDeliveryAddonOption();
@@ -338,12 +343,12 @@ public class RAStampedAgreement {
 		Assert.assertEquals(notarisedAgreement, 300);
 		System.out.println("Notarised Agreement  Amount :" + notarisedAgreement);
 
-		//int tenantVerification = user.getLIneItemsPrice("Tenant Verification");
-		//Assert.assertEquals(tenantVerification, 99);
-		//System.out.println("Tenant Verification Amount :" + tenantVerification);
-
+		// int tenantVerification = user.getLIneItemsPrice("Tenant Verification");
+		// Assert.assertEquals(tenantVerification, 99);
+		// System.out.println("Tenant Verification Amount :" + tenantVerification);
+        /*
 		int discountAmt = user.getDiscountAmt();
-		System.out.println("Discount Amount :" + discountAmt);
+		System.out.println("Discount Amount :" + discountAmt); */
 
 		int sumTotal = user.sumLineItemAmounts();
 		System.out.println("Sum of LineItem Amount :" + sumTotal);
@@ -380,9 +385,13 @@ public class RAStampedAgreement {
 		} else {
 			Assert.assertTrue(Math.abs(paidAmt - PayebleTotal) <= tolerance2);
 		}
-	}	
+	}
 
 	public static String generateRandomMobileNumber() {
 		return "76" + RandomStringUtils.randomNumeric(6) + "21";
+	}
+
+	public static boolean isWindowMaximized(WebDriver driver) {
+		return driver.manage().window().getPosition().getX() == 0 && driver.manage().window().getPosition().getY() == 0;
 	}
 }

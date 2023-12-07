@@ -51,7 +51,7 @@ public class RAEstampAgreementFlow {
 	@When("User Clicks on the Check Price button and Selects the {string} Package")
 	public void user_clicks_on_the_check_price_button_and_selects_the_package(String packageTitle) {
 		user.selectCityOrFinishYourAgreement("Bangalore");
-		user.checkPrices();
+		user.checkPrices(); 
 		user.selectPackage(packageTitle);
 	}
 
@@ -245,8 +245,8 @@ public class RAEstampAgreementFlow {
 		Assert.assertEquals(tenantVerification, 99);
 		System.out.println("Tenant Verification Amount :" + tenantVerification);
 
-		int discountAmt = user.getDiscountAmt();
-		System.out.println("Discount Amount :" + discountAmt);
+		//int discountAmt = user.getDiscountAmt();
+		//System.out.println("Discount Amount :" + discountAmt);
 
 		int sumTotal = user.sumLineItemAmounts();
 		System.out.println("Sum of LineItem Amount :" + sumTotal);

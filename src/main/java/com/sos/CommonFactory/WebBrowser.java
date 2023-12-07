@@ -28,7 +28,7 @@ public class WebBrowser {
 		boolean isHeadless = Boolean.parseBoolean(configReader.init_prop().getProperty("headless"));
 
 		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup(); 
 			ChromeOptions options = new ChromeOptions();
 			if (isHeadless) {
 				options.addArguments("--headless");
@@ -49,8 +49,8 @@ public class WebBrowser {
 			System.out.println("Please pass the correct Browser value: " + browser);
 		}
 		getDriver().manage().deleteAllCookies();
-		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getDriver().manage().window().maximize();
 		//getDriver().manage().window().setSize(new Dimension(280, 1000));
 		return getDriver();
 	}

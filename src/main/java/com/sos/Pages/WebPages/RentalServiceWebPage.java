@@ -76,7 +76,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	// TV
 	private By getStartedLocater = By.xpath("//div[contains(@class,'3W21B')]//*[@type='button'][text()='Get Started']");
 	private By moreLocater = By.xpath("//div[contains(text(),'more')]");
-	private By leaalServiceloc = By.xpath("//div[text()='Legal Services']");
+	private By legalServiceloc = By.xpath("//div[text()='Legal Services']");
 	private String leagalServices = "//div[@class='item-label' and text()='service']";
 	private String selectTvPackage = "(//div[@class='title' and text()='package']/ancestor::div[@class='item']//button[contains(@class,'select-package')])[1]";
 	private By selectIdCard = By.xpath("//div[contains(@class,'select') and text()='Select ID card']");
@@ -117,7 +117,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 
     public void tenantBasicVerificationDetails(String idType,String idNumber,String name,String phone,String dob,String fatherName) throws InterruptedException {
     	driver.navigate().refresh();
-    	Thread.sleep(2000);
+    	Thread.sleep(5000);
     	click(selectIdCard);
 		click(driver.findElement(By.xpath(idTypesLocator.replace("idType", idType))));
 		sendKeys(idNumberLoc, idNumber);
@@ -162,20 +162,29 @@ public class RentalServiceWebPage extends CommonSelenium {
 	}
 
 	public void selectTenantVerification(String service) {
-		waitForElementDisplay(driver, moreLocater, 2);
+		waitForElementDisplay(driver, moreLocater,5);
 		click(moreLocater);
 		waitFor(1);
-		click(leaalServiceloc);
-		waitForElementToBeClickable(driver, By.xpath(leagalServices.replace("service", service)), 3);
-		click(By.xpath(leagalServices.replace("service", service)));
+		click(legalServiceloc);
+		if (isElementPresent(driver, By.xpath(leagalServices.replace("service", service)))) {
+			click(By.xpath(leagalServices.replace("service", service)));
+		} else {
+			waitForElementToBeClickable(driver, By.xpath("//div[@class='item-label' and text()='service']".replace("service", service)),10);
+			click(By.xpath("//div[@class='item-label' and text()='service']".replace("service", service)));
+		}
+		
+		waitFor(3);
 	}
 
 	public void selectTenantVerificationPackage(String tvpackage) {
-		if (!driver.findElement(getStartedLocater).isDisplayed()) {
-			waitFor(3);
+		if (driver.findElement(getStartedLocater).isDisplayed()) {
+			click(getStartedLocater);
+		} else {
+			waitForElementDisplay(driver,getStartedLocater,5);		
+			click(getStartedLocater);
 		}
-		click(getStartedLocater);
-		waitFor(2);
+		driver.navigate().refresh();
+		waitFor(2); 
 		//click(driver.findElement(By.xpath(selectTvPackage.replace("package", tvpackage))));
 		click(driver.findElement(By.xpath("(//div[@class='title' and text()='"+tvpackage+"']/ancestor::div[@class='item']//button[contains(@class,'select-package')])[1]")));
 	}
@@ -214,9 +223,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	}
 
 	public void loginSignUpMethod(String mobileNumber, String otp, String username, String email) {
-		if (!driver.findElement(loginLinkBtn).isDisplayed()) {
-			waitFor(3);
-		}
+		waitFor(5);
 		click(loginLinkBtn);
 		waitForElementDisplay(driver, mobileInput, 2);
 		sendKeys(mobileInput, mobileNumber);
@@ -247,11 +254,9 @@ public class RentalServiceWebPage extends CommonSelenium {
 	}
 
 	public void genrateEstimate(String stamPaper, String agrMonth, int esignNum) throws InterruptedException {
-
+		click(Other);
 		List<WebElement> stampList = driver.findElements(stampMenuList);
 		boolean foundStamp = false;
-
-		click(Other);
 		for (WebElement stamp : stampList) {
 			if (stamp.getText().equals(stamPaper)) {
 				try {
@@ -918,15 +923,17 @@ public class RentalServiceWebPage extends CommonSelenium {
 
 	public void selectHSServiceType(String service) throws InterruptedException {
 		String serviceHSxpath = "//span[text()='service']".replace("service", service);
-		if (!driver.findElement(By.xpath(serviceHSxpath)).isDisplayed()) {
+		if (driver.findElement(By.xpath(serviceHSxpath)).isDisplayed()) {
+			click(By.xpath(serviceHSxpath));
+		} else {
 			waitForElementToBeClickable(driver, By.xpath(serviceHSxpath), 5);
+			click(By.xpath(serviceHSxpath));
+			waitFor(3);
 		}
-		click(By.xpath(serviceHSxpath));
-		waitFor(3);
 	}
 	
 	public void checkPrices() {
-		By checkPriceBtn = By.cssSelector("div[class='action-button___3W21B'] button[type='button']");
+		waitForElementToBeClickable(driver,checkPriceBtn,5);
 		click(checkPriceBtn);
 	}
 
@@ -959,7 +966,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	public void selectHSServiceCity(String city) {
 		switchToChildWindow();
 		String cityXpath = "//img[@alt='city']".replace("city", city);
-		waitForElementToBeClickable(driver, By.xpath(cityXpath), 5);
+		waitForElementToBeClickable(driver, By.xpath(cityXpath), 10);
 		click(By.xpath(cityXpath));
 	}
 
@@ -1087,9 +1094,9 @@ public class RentalServiceWebPage extends CommonSelenium {
 		By calendar = By.xpath("//*[text()='Select Day'] | //*[@placeholder='Select Day']");
 		By currentMonthSelector = By.cssSelector("div[class*='current-month']");
 		By previousBtn = By.xpath("//button[contains(@class,'navigation--previous')]");
-		waitForElementDisplay(driver, calendar, 10);
+		waitForElementToBeClickable(driver, calendar, 10);
 		click(calendar);
-		waitForElementDisplay(driver, currentMonthSelector, 10);
+		waitForElementToBeClickable(driver, currentMonthSelector, 10);
 		WebElement currentMonth = driver.findElement(currentMonthSelector);
 		while (true) {
 			if (currentMonth.getText().equals(agrMonth)) {

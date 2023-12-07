@@ -6,7 +6,7 @@
       <class name="com.sos.testRunner.TestNG_TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 5 6 7"/>
+          <include name="runScenario" invocation-numbers="8"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.sos.testRunner.TestNG_TestRunner -->
