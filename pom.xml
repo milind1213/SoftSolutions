@@ -160,11 +160,15 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.1.2</version>
 					<configuration>
-						<includes>
+					<!--	<includes>
 							<include>**/*TestNG_TestRunner*</include>
 						</includes>
 						<parallel>methods</parallel>
-						<useUnlimitedThreads>false</useUnlimitedThreads>
+						<useUnlimitedThreads>false</useUnlimitedThreads>-->
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+						
 					</configuration>
 				</plugin>
 
