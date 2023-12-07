@@ -1,123 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-07T18:01:07 IST" name="Default suite" finished-at="2023-12-07T18:07:05 IST" duration-ms="358389">
+  <suite started-at="2023-12-07T21:06:50 IST" name="Default suite" finished-at="2023-12-07T21:08:22 IST" duration-ms="91562">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-07T18:01:07 IST" name="Default test" finished-at="2023-12-07T18:07:05 IST" duration-ms="358389">
+    <test started-at="2023-12-07T21:06:50 IST" name="Default test" finished-at="2023-12-07T21:08:22 IST" duration-ms="91562">
       <class name="com.sos.testRunner.TestNG_TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:07 IST" name="setUpClass" finished-at="2023-12-07T18:01:08 IST" duration-ms="1202" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:06:50 IST" name="setUpClass" finished-at="2023-12-07T21:06:51 IST" duration-ms="674" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@761e788f]]>
+                <![CDATA[org.testng.TestRunner@255d4d7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:03:28 IST" duration-ms="140441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the functionality for generating a rental agreement estimate with addons"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:03:58 IST" duration-ms="170218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Tenant Detail Edit Functionality from Summary"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:07:04 IST" duration-ms="356572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Make Payment and Validate Order Status"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the Non-MH Rental Agreements flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:06:28 IST" duration-ms="320583" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Generate Estimate"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the Non-MH Rental Agreements flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:03:53 IST" duration-ms="165249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Basic Verification Package Functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the Tenant Verification Flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:03:03 IST" duration-ms="115498" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the functionality for generating a rental agreement estimate without any addons"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:03:19 IST" duration-ms="131504" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:06:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T21:08:22 IST" duration-ms="90652" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,87 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:04:01 IST" duration-ms="173306" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the property Details Edit Functionality from Summary"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:05:36 IST" duration-ms="268002" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Contract Detail Edit Functionality from Summary"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:01:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:04:04 IST" duration-ms="176437" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Landlord Detail Edit Functionality from Summary"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the flow for Non-MH Rental Agreements"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:03:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:05:13 IST" duration-ms="130075" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Standard Verification Package Functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the Tenant Verification Flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:03:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T18:05:41 IST" duration-ms="141530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Comprehensive Verification Package Functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify the Tenant Verification Flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T18:07:04 IST" name="tearDownClass" finished-at="2023-12-07T18:07:05 IST" duration-ms="546" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:08:22 IST" name="tearDownClass" finished-at="2023-12-07T21:08:22 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,4 +1,3 @@
-@sanity
 Feature: Verify the flow for Non-MH Rental Agreements
 
   Background:
