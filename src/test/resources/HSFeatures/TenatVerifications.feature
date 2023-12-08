@@ -4,7 +4,6 @@ Feature: Verify the Tenant Verification Flow
     Given the user has landed on the NoBroker LoginPage
     When the user logs in with valid login credentials
     
-  @sanity
   Scenario Outline: Instant Verification Package Functionality
     Given the user lands on the Legal Services Page and selects Tenant Verification
     And clicks on the Get Started button and selects the "<tvPackage>" package

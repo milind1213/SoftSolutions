@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-08T08:34:11 IST" name="Suite" finished-at="2023-12-08T08:34:26 IST" duration-ms="14381">
+  <suite started-at="2023-12-08T22:37:12 IST" name="Default suite" finished-at="2023-12-08T22:39:43 IST" duration-ms="151321">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-08T08:34:11 IST" name="Test" finished-at="2023-12-08T08:34:26 IST" duration-ms="14381">
+    <test started-at="2023-12-08T22:37:12 IST" name="Default test" finished-at="2023-12-08T22:39:43 IST" duration-ms="151321">
       <class name="com.sos.testRunner.TestNG_TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:34:11 IST" name="setUpClass" finished-at="2023-12-08T08:34:12 IST" duration-ms="845" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:37:12 IST" name="setUpClass" finished-at="2023-12-08T22:37:13 IST" duration-ms="1086" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7f94541b]]>
+                <![CDATA[org.testng.TestRunner@6cfd9a54]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:34:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T08:34:25 IST" duration-ms="13064" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:37:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T22:39:07 IST" duration-ms="113525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,28 +34,62 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
-at org.testng.Assert.fail(Assert.java:111)
-at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
-at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:230)
-at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
-at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:34:25 IST" name="tearDownClass" finished-at="2023-12-08T08:34:26 IST" duration-ms="429" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:37:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T22:39:33 IST" duration-ms="139846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Standard Verification Package Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the Tenant Verification Flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:37:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T22:39:43 IST" duration-ms="149753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comprehensive Verification Package Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the Tenant Verification Flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:37:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T22:39:25 IST" duration-ms="132094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Basic Verification Package Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the Tenant Verification Flow"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T22:39:43 IST" name="tearDownClass" finished-at="2023-12-08T22:39:43 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.sos.testRunner.TestNG_TestRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

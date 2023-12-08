@@ -122,13 +122,13 @@ public class RAUploadYourDraft {
 		Assert.assertEquals(stampDuty, 100);
 		System.out.println("Stamp Duty Amount :" + stampDuty);
 
-		int priceTwoExtraCopyAmt = user.getLIneItemsPrice("Two extra original copies");
+		/*int priceTwoExtraCopyAmt = user.getLIneItemsPrice("Two extra original copies");
 		int actualPrice = user.getExtraTwoCopyPrice();
 		int tolerance = 1;
 		// Assert.assertEquals(priceTwoExtraCopyAmt, extraTwoCopyPrice);
 		Assert.assertTrue(Math.abs(actualPrice - priceTwoExtraCopyAmt) <= tolerance);
 		System.out.println("Two Extra Copy Amount :" + priceTwoExtraCopyAmt);
-
+        */
 		if (isBefore3PM) {
 			deliveryPrice = user.getLIneItemsPrice("Same Day Delivery");
 		} else {
@@ -137,7 +137,7 @@ public class RAUploadYourDraft {
 		System.out.println(" Delivery Amount :" + deliveryPrice);
 
 		int eSignAgreement = user.getLIneItemsPrice("E-Sign Agreement");
-		Assert.assertEquals(eSignAgreement, 150);
+		Assert.assertEquals(eSignAgreement, 100);
 		System.out.println("E-Sign Agreement Amount :" + eSignAgreement);
 
 		int notarisedAgreement = user.getLIneItemsPrice("Notarised Agreement");

@@ -9,7 +9,9 @@ import java.util.Set;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -62,6 +64,33 @@ public class CommonSelenium {
 		}
 	}
 
+	 public void waitForElementPresence(WebDriver driver,By by, int seconds) {
+	        try {
+	            new WebDriverWait(driver, Duration.ofSeconds(seconds))
+	                    .until(ExpectedConditions.presenceOfElementLocated(by));
+	        } catch (Exception e) {
+	            System.err.println("Waited for element [" + by.toString() + "] presence for " + seconds + " seconds");
+	        }
+	    }
+
+	    public void waitForElementVisibility(WebDriver driver , By by, int seconds) {
+	        try {
+	            new WebDriverWait(driver, Duration.ofSeconds(seconds))
+	                    .until(ExpectedConditions.visibilityOfElementLocated(by));
+	        } catch (Exception e) {
+	            System.err.println("Waited for element [" + by.toString() + "] visibility for " + seconds + " seconds");
+	        }
+	    }
+
+	    public void waitForElementToBeClickable(By by, int seconds) {
+	        try {
+	            new WebDriverWait(driver, Duration.ofSeconds(seconds))
+	                    .until(ExpectedConditions.elementToBeClickable(by));
+	        } catch (Exception e) {
+	            System.err.println("Waited for element [" + by.toString() + "] to be clickable for " + seconds + " seconds");
+	        }
+	    }
+	    
 	protected void waitForElementDisplay(WebDriver driver, By locator, int seconds) {
 		try {
 			new WebDriverWait(driver, Duration.ofSeconds(seconds))
@@ -304,6 +333,19 @@ public class CommonSelenium {
 		}
 	}
 
+	public boolean isElementPresent(By by) {
+	    try {
+	        // Check if the element is present in the DOM
+	        driver.findElement(by);
+	        return true;
+	    } catch (NoSuchElementException e) {
+	        return false;
+	    }
+	}
+	
+
+
+	
 	protected void scrollClick(By locator) {
 		WebElement element = driver.findElement(locator);
 		JavascriptExecutor js = (JavascriptExecutor) driver;

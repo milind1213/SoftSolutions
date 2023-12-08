@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -161,23 +162,49 @@ public class RentalServiceWebPage extends CommonSelenium {
 		return Amount;
 	}
 
+	
 	public void selectTenantVerification(String service) {
-		waitForElementDisplay(driver, moreLocater, 5);
-		click(moreLocater);
-		waitFor(1);
-		click(legalServiceloc);
-		if (isElementPresent(driver, By.xpath(leagalServices.replace("service", service)))) {
-			click(By.xpath(leagalServices.replace("service", service)));
-		} else {
-			waitForElementToBeClickable(driver,
-					By.xpath("//div[@class='item-label' and text()='service']".replace("service", service)), 10);
-			click(By.xpath("//div[@class='item-label' and text()='service']".replace("service", service)));
-		}
-
-		waitFor(3);
+	    waitForElementDisplay(driver, moreLocater, 5);
+	    click(moreLocater);
+	    waitFor(1);
+	    click(legalServiceloc);
+	    driver.navigate().refresh();
+	    waitFor(2);
+	    String legalServiceXPath = leagalServices.replace("service", service);
+	    if (isElementPresent(driver, By.xpath(legalServiceXPath))) {
+	        click(By.xpath(legalServiceXPath));
+	    } else {
+	        WebElement legalServiceele = retryingFindClick(By.xpath("//div[@class='item-label' and text()='" + service + "']"));
+	        if (legalServiceele != null) {
+	            click(legalServiceele);
+	        }
+	    }
+	    waitFor(3);
+	}
+	
+	
+	public  WebElement retryingFindClick(By by) {
+	    int attemptsCount = 0;
+	    while (attemptsCount < 3) {
+	        try {
+	            WebElement element = driver.findElement(by);
+	            if (element.isDisplayed() && element.isEnabled()) {
+	                element.click();
+	                return element;
+	            }
+	        } catch (NoSuchElementException | StaleElementReferenceException e) {
+	        } catch (ElementClickInterceptedException e) {
+	            System.out.println("Element is present but not clickable: " + by);
+	        }
+	        waitFor(3000); 
+	        attemptsCount++;
+	    }
+	    throw new NoSuchElementException("Element not found or not clickable after 3 attempts: " + by);
 	}
 
 	public void selectTenantVerificationPackage(String tvpackage) {
+		driver.navigate().refresh();
+        waitFor(2);
 		if (driver.findElement(getStartedLocater).isDisplayed()) {
 			click(getStartedLocater);
 		} else {
@@ -186,8 +213,6 @@ public class RentalServiceWebPage extends CommonSelenium {
 		}
 		driver.navigate().refresh();
 		waitFor(2);
-		// click(driver.findElement(By.xpath(selectTvPackage.replace("package",
-		// tvpackage))));
 		click(driver.findElement(By.xpath("(//div[@class='title' and text()='" + tvpackage
 				+ "']/ancestor::div[@class='item']//button[contains(@class,'select-package')])[1]")));
 	}
@@ -228,7 +253,7 @@ public class RentalServiceWebPage extends CommonSelenium {
 	public void loginSignUpMethod(String mobileNumber, String otp, String username, String email) {
 		waitFor(5);
 		click(loginLinkBtn);
-		waitForElementDisplay(driver, mobileInput, 2);
+		waitForElementPresence(driver, mobileInput, 5);
 		sendKeys(mobileInput, mobileNumber);
 
 		if (isElementPresent(driver, otpField)) {
@@ -236,26 +261,28 @@ public class RentalServiceWebPage extends CommonSelenium {
 			click(loginsubmit);
 
 		} else {
-			waitForElementDisplay(driver, usernameField, 1);
+			waitForElementPresence(driver, usernameField,5);
 			sendKeys(usernameField, username);
 
-			waitForElementDisplay(driver, emailField, 1);
+			waitForElementPresence(driver, emailField, 5);
 			sendKeys(emailField, email);
 
-			waitForElementToBeClickable(driver, signUpsubmit, 1);
+			waitForElementToBeClickable(driver, signUpsubmit,5);
 			click(signUpsubmit);
 		}
 	}
 
 	public String getLoginSignUpSuccesstext() {
-		String signedUptext = driver.findElement(alertMsg).getText();
-		if (isTextPresent(driver, signedUptext)) {
-			return signedUptext;
-		} else {
-			return "Signed in Successfully";
-		}
+	    waitForElementPresence(driver,alertMsg,3);
+	    String signedUptext;
+	    try {
+	        signedUptext = driver.findElement(alertMsg).getText();
+	    } catch (Exception e) {
+	        signedUptext = "Signed in Successfully";
+	    }
+	    return signedUptext;
 	}
-
+	
 	public void genrateEstimate(String stamPaper, String agrMonth, int esignNum) throws InterruptedException {
 		click(Other);
 		List<WebElement> stampList = driver.findElements(stampMenuList);
@@ -654,10 +681,11 @@ public class RentalServiceWebPage extends CommonSelenium {
 		click(loginLinkBtn);
 		waitFor(2);
 	}
-
 	public void enterMobile(String mobile) {
-		sendKeys(By.xpath("//input[starts-with(@placeholder,'Enter') and @maxlength='10']"), mobile);
-		waitFor(2);
+	     By mobileInputLocator = By.xpath("//input[starts-with(@placeholder,'Enter') and @maxlength='10']");
+		 waitForElementPresence(driver,mobileInputLocator,10);
+	     sendKeys(mobileInputLocator, mobile);
+	     waitFor(2);
 	}
 
 	public void enterUsername(String username) {
@@ -917,17 +945,22 @@ public class RentalServiceWebPage extends CommonSelenium {
 		}
 	}
 
-	public void selectHSServiceType(String service) throws InterruptedException {
-		String serviceHSxpath = "//span[text()='service']".replace("service", service);
-		if (driver.findElement(By.xpath(serviceHSxpath)).isDisplayed()) {
-			click(By.xpath(serviceHSxpath));
-		} else {
-			Thread.sleep(3000);
-			click(By.xpath(serviceHSxpath));
-			waitFor(3);
-		}
-	}
 
+	
+	public void selectHSServiceType(String service) throws InterruptedException {
+	    String serviceHSXPath = "//span[text()='" + service + "']";
+
+	    if (isElementPresent(By.xpath(serviceHSXPath))) {
+	        scrollClick(By.xpath(serviceHSXPath));
+	    } else {
+	        Thread.sleep(3000);
+	        scrollClick(By.xpath(serviceHSXPath));
+	        waitFor(3);
+	    }
+	}
+	
+	
+	
 	public void checkPrices() {
 		waitForElementToBeClickable(driver, checkPriceBtn, 5);
 		click(checkPriceBtn);
