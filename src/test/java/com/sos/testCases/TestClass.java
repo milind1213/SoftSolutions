@@ -1,14 +1,14 @@
 package com.sos.testCases;
 
-import java.util.Arrays;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestClass {
-	public static void main(String[] args) {
-		String a1 = "MilindGM";
-		System.out.println(extraEnd(a1));}
-	      static String extraEnd(String str) {
-			String st = str.substring(str.length() - 2, str.length());
-			return st + st + st;
-		}
-
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "/src/test/resources/Drivers/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://chromedriver.chromium.org/getting-started");
+        driver.quit();
+    }
 }
+

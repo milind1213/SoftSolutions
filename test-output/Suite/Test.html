@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 06 15:41:34 IST 2023</td>
+<td>Started on:</td><td>Fri Dec 08 08:13:46 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (864 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40661 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,31 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sos.testRunner.TestNG_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sos.testRunner.TestNG_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Instant Verification Package Functionality", "Verify the Tenant Verification Flow"</td>
+<td><div><pre>java.lang.AssertionError: Failed to click on element [By.xpath: //span[text()=&apos;Painting &amp; Cleaning&apos;]]
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectHSServiceType(RentalServiceWebPage.java:925)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_lands_on_the_legal_services_page_and_selects_tenant_verification(TenantVerifications.java:31)
+	at ✽.the user lands on the Legal Services Page and selects Tenant Verification(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:9)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace541875679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace541875679'><pre>java.lang.AssertionError: Failed to click on element [By.xpath: //span[text()=&apos;Painting &amp; Cleaning&apos;]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.selectHSServiceType(RentalServiceWebPage.java:925)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_lands_on_the_legal_services_page_and_selects_tenant_verification(TenantVerifications.java:31)
+	at ✽.the user lands on the Legal Services Page and selects Tenant Verification(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:9)
+</pre></div></td>
+<td>39</td>
+<td>com.sos.testRunner.TestNG_TestRunner@d554c5f</td></tr>
+</table><p>
 </body>
 </html>

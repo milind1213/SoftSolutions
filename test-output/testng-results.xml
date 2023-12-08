@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-07T21:06:50 IST" name="Default suite" finished-at="2023-12-07T21:08:22 IST" duration-ms="91562">
+  <suite started-at="2023-12-08T08:19:42 IST" name="Default suite" finished-at="2023-12-08T08:21:19 IST" duration-ms="96337">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-07T21:06:50 IST" name="Default test" finished-at="2023-12-07T21:08:22 IST" duration-ms="91562">
+    <test started-at="2023-12-08T08:19:42 IST" name="Default test" finished-at="2023-12-08T08:21:19 IST" duration-ms="96337">
       <class name="com.sos.testRunner.TestNG_TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:06:50 IST" name="setUpClass" finished-at="2023-12-07T21:06:51 IST" duration-ms="674" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:19:42 IST" name="setUpClass" finished-at="2023-12-08T08:19:43 IST" duration-ms="860" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@255d4d7]]>
+                <![CDATA[org.testng.TestRunner@5c78f456]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:06:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T21:08:22 IST" duration-ms="90652" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:19:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-08T08:21:18 IST" duration-ms="94975" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,24 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed to click on element [By.xpath: //div[contains(@class,'select') and text()='Select ID card']]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'select') and text()='Select ID card']]
+at org.testng.Assert.fail(Assert.java:111)
+at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
+at com.sos.Pages.WebPages.RentalServiceWebPage.tenantVerificationDetails(RentalServiceWebPage.java:197)
+at com.sos.stepDefinitions.TenantVerifications.the_user_selects_verification_id_type_enters_id_number_name_and_dob(TenantVerifications.java:44)
+at ✽.the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@4dc27487]" started-at="2023-12-07T21:08:22 IST" name="tearDownClass" finished-at="2023-12-07T21:08:22 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sos.testRunner.TestNG_TestRunner@d554c5f]" started-at="2023-12-08T08:21:18 IST" name="tearDownClass" finished-at="2023-12-08T08:21:19 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

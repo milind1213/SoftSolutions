@@ -40,7 +40,7 @@ public class TenantVerifications {
     }
 
     @Given("the user selects Verification ID Type {string} Enters ID Number {string} name {string} and DOB {string}")
-    public void the_user_selects_verification_id_type_enters_id_number_name_and_dob(String idType, String idNumber, String name, String dob) {
+    public void the_user_selects_verification_id_type_enters_id_number_name_and_dob(String idType, String idNumber, String name, String dob) throws InterruptedException {
     	user.tenantVerificationDetails(idType, idNumber, name, dob);
     }
 
