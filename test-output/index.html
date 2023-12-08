@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.sos.testRunner.TestClass" class="method navigator-link" hash-for-method="mainMethod">mainMethod</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.sos.testRunner.TestNG_TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Standard Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">runScenario("Standard Verification Package Functionality", "Verify the Tenant Verification Flow")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.sos.testRunner.TestNG_TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Comprehensive Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">runScenario("Comprehensive Verification Package Functionality", "Verify the Tenant Verification Flow")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.sos.testRunner.TestNG_TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Basic Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">runScenario("Basic Verification Package Functionality", "Verify the Tenant Verification Flow")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.sos.testRunner.TestNG_TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Instant Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">runScenario("Instant Verification Package Functionality", "Verify the Tenant Verification Flow")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,25 +133,90 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sos.testRunner.TestClass</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.sos.testRunner.TestNG_TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="mainMethod">
-                  </a> <!-- mainMethod -->
-                  <span class="method-name">mainMethod</span>
+                  <a name="runScenario(&quot;Standard Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">
+                  </a> <!-- runScenario("Standard Verification Package Functionality", "Verify the Tenant Verification Flow") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Standard Verification Package Functionality","Verify the Tenant Verification Flow")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Comprehensive Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">
+                  </a> <!-- runScenario("Comprehensive Verification Package Functionality", "Verify the Tenant Verification Flow") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Comprehensive Verification Package Functionality","Verify the Tenant Verification Flow")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Basic Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">
+                  </a> <!-- runScenario("Basic Verification Package Functionality", "Verify the Tenant Verification Flow") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Basic Verification Package Functionality","Verify the Tenant Verification Flow")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Instant Verification Package Functionality&quot;, &quot;Verify the Tenant Verification Flow&quot;)">
+                  </a> <!-- runScenario("Instant Verification Package Functionality", "Verify the Tenant Verification Flow") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Instant Verification Package Functionality","Verify the Tenant Verification Flow")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1752653556/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-109394250/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +225,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sos.testRunner.TestClass&quot;/&gt;
+      &lt;class name=&quot;com.sos.testRunner.TestNG_TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -169,6 +249,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -185,16 +273,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'mainMethod')
-data.setCell(0, 2, 'com.sos.testRunner.TestClass')
-data.setCell(0, 3, 4664);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.sos.testRunner.TestNG_TestRunner')
+data.setCell(0, 3, 33324);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.sos.testRunner.TestNG_TestRunner')
+data.setCell(1, 3, 24111);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.sos.testRunner.TestNG_TestRunner')
+data.setCell(2, 3, 24085);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.sos.testRunner.TestNG_TestRunner')
+data.setCell(3, 3, 24079);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,11 +320,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sos.testRunner.TestClass</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">mainMethod</span>
+              <div class="chronological-class-name">com.sos.testRunner.TestNG_TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@28cb3a25)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Standard Verification Package Functionality", "Verify the Tenant Verification Flow")</span>
+                <span class="method-start">714 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Comprehensive Verification Package Functionality", "Verify the Tenant Verification Flow")</span>
+                <span class="method-start">714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Basic Verification Package Functionality", "Verify the Tenant Verification Flow")</span>
+                <span class="method-start">714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Instant Verification Package Functionality", "Verify the Tenant Verification Flow")</span>
+                <span class="method-start">714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">34039 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
