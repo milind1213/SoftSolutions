@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-08T22:55:14 IST" name="Suite" finished-at="2023-12-08T22:55:18 IST" duration-ms="3298">
+  <suite started-at="2023-12-08T23:08:18 IST" name="Default suite" finished-at="2023-12-08T23:08:23 IST" duration-ms="4713">
     <groups>
     </groups>
-    <test started-at="2023-12-08T22:55:14 IST" name="Test" finished-at="2023-12-08T22:55:18 IST" duration-ms="3298">
+    <test started-at="2023-12-08T23:08:18 IST" name="Default test" finished-at="2023-12-08T23:08:23 IST" duration-ms="4713">
       <class name="com.sos.testRunner.TestClass">
-        <test-method signature="mainMethod()[pri:0, instance:com.sos.testRunner.TestClass@7ce026d3]" started-at="2023-12-08T22:55:14 IST" name="mainMethod" finished-at="2023-12-08T22:55:18 IST" duration-ms="3236" status="PASS">
+        <test-method signature="mainMethod()[pri:0, instance:com.sos.testRunner.TestClass@7ce026d3]" started-at="2023-12-08T23:08:18 IST" name="mainMethod" finished-at="2023-12-08T23:08:23 IST" duration-ms="4664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainMethod -->
       </class> <!-- com.sos.testRunner.TestClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
