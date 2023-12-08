@@ -32,6 +32,7 @@ public class WebBrowser {
 			ChromeOptions options = new ChromeOptions();
 			if (isHeadless) {
 				options.addArguments("--headless");
+				options.addArguments("--user-data-dir=/home/milind/chromedriver_data");
 				System.out.println(" launching headless browser");
 		 	}
 			Map<String, Object> prefs = new HashMap<>();

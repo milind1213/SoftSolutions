@@ -8,17 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">96,337</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,381</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.sos.testRunner.TestNG_TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1702003783585</td><td rowspan="1">94975</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.sos.testRunner.TestNG_TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1702004652639</td><td rowspan="1">13064</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.sos.testRunner.TestNG_TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Instant Verification Package Functionality&quot;</td><td>&quot;Verify the Tenant Verification Flow&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;select&apos;) and text()=&apos;Select ID card&apos;]]
-	at org.testng.Assert.fail(Assert.java:111)
+<h2>Test</h2><h3 id="m0">com.sos.testRunner.TestNG_TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Instant Verification Package Functionality&quot;</td><td>&quot;Verify the Tenant Verification Flow&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,&apos;nav-item-content&apos;) and text()=&apos;Log in&apos;]]
 	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.tenantVerificationDetails(RentalServiceWebPage.java:197)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_selects_verification_id_type_enters_id_number_name_and_dob(TenantVerifications.java:44)
-	at ✽.the user selects Verification ID Type &quot;PAN Card&quot; Enters ID Number &quot;BREPG1234F&quot; name &quot;Milind&quot; and DOB &quot;11112000&quot;(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:11)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:230)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+... Removed 1 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

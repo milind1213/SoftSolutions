@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 08, 2023 08:19:42</span></a>
+<a href="#"><span class="badge badge-primary">Dec 08, 2023 08:34:12</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Verify the Tenant Verification Flow</p>
             <p class="text-sm">
-              <span>8:19:43 AM</span> / <span>00:01:34:817</span>
+              <span>8:34:12 AM</span> / <span>00:00:12:855</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Verify the Tenant Verification Flow</h5>
-<span class='badge badge-success'>12.08.2023 8:19:43 AM</span>
-<span class='badge badge-danger'>12.08.2023 8:21:18 AM</span>
-<span class='badge badge-default'>00:01:34:817</span>
+<span class='badge badge-success'>12.08.2023 8:34:12 AM</span>
+<span class='badge badge-danger'>12.08.2023 8:34:25 AM</span>
+<span class='badge badge-default'>00:00:12:855</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -121,9 +121,6 @@
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Instant Verification Package Functionality</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="scenario_outline ">
@@ -131,9 +128,6 @@
               <div class="card-header">
                 <div class="card-title outline-child">
                   <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Instant Verification Package Functionality</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -142,32 +136,32 @@
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>When the user logs in with valid login credentials</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks on the Get Started button and selects the "Instant Verification" package</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>And the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'select') and text()='Select ID card']]
+        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
 	at org.testng.Assert.fail(Assert.java:111)
 	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:189)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.tenantVerificationDetails(RentalServiceWebPage.java:197)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_selects_verification_id_type_enters_id_number_name_and_dob(TenantVerifications.java:44)
-	at ✽.the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:11)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:230)
+	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
+	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
 </textarea>
       
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And clicks on the Get Started button and selects the "Instant Verification" package</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"</span>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
@@ -178,17 +172,6 @@
                   <div class="step skip-bg">
                     <span>Then validate the price <99> and Package Title "Instant Verification" in the summary Page</span>
       <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Instant_Verification_Package_Functionality
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
       </div>
                   </div>
               </div>
@@ -239,11 +222,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:21:04 AM</td>
+<td>08:34:18 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>And the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"</a>
+<a href="#" class="linked" test-id='1' id='7'>When the user logs in with valid login credentials</a>
 <div class="">
-<span class="badge badge-default">Verify the Tenant Verification Flow.Instant Verification Package Functionality.And the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"</span>
+<span class="badge badge-default">Verify the Tenant Verification Flow.Instant Verification Package Functionality.When the user logs in with valid login credentials</span>
 </div>
 </td>
 </tr>
@@ -291,7 +274,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>08:19:43 AM</td>
+<td>08:34:12 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>Instant Verification Package Functionality</a>
 <div class="">
@@ -316,13 +299,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 08, 2023 08:19:42</h3>
+<h3>Dec 08, 2023 08:34:12</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 08, 2023 08:21:18</h3>
+<h3>Dec 08, 2023 08:34:25</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -393,10 +376,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='14%'><b>1</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='14%'><b>1</b> steps failed,
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -412,7 +395,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify the Tenant Verification Flow":94.817
+"Verify the Tenant Verification Flow":12.855
 };
 </script>
 <div class="row">
@@ -449,10 +432,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 1,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
