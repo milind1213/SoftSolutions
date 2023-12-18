@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sos.testRunner.TestNG_TestRunner">
+      <class name="com.sos.testRunner.Failed_TestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.sos.testRunner.TestNG_TestRunner -->
+      </class> <!-- com.sos.testRunner.Failed_TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

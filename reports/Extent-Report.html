@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 09, 2023 00:32:49</span></a>
+<a href="#"><span class="badge badge-primary">Dec 18, 2023 21:18:35</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">Verify the Tenant Verification Flow</p>
             <p class="text-sm">
-              <span>12:32:50 AM</span> / <span>00:00:33:131</span>
+              <span>9:18:35 PM</span> / <span>00:02:40:783</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Verify the Tenant Verification Flow</h5>
-<span class='badge badge-success'>12.09.2023 12:32:50 AM</span>
-<span class='badge badge-danger'>12.09.2023 12:33:23 AM</span>
-<span class='badge badge-default'>00:00:33:131</span>
+<span class='badge badge-success'>12.18.2023 9:18:35 PM</span>
+<span class='badge badge-danger'>12.18.2023 9:21:16 PM</span>
+<span class='badge badge-default'>00:02:40:783</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,7 +109,65 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Basic Verification Package Functionality</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Standard Verification Package Functionality</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Standard Verification Package Functionality</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user has landed on the NoBroker LoginPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user logs in with valid login credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on the Get Started button and selects the "Standard Verification" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Entering Verification Details ID "PAN Card" ID No "BREPG1234F" name "Milind" phone "9876543210" DOB "11112000" Gender and FatherName "John Doe"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on the Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Entering Address Details "A-12011" "HSR" and pincode "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validates the price <249> and Summary Package Title "Standard Verification" in the summary Page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>Comprehensive Verification Package Functionality</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -119,7 +177,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Basic Verification Package Functionality</div>
+                  <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Comprehensive Verification Package Functionality</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
@@ -131,52 +189,78 @@
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
+                  <div class="step pass-bg">
                     <span>When the user logs in with valid login credentials</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
-	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on the Get Started button and selects the "Comprehensive Verification" package</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Entering Verification Details ID "PAN Card" ID No "BREPG1234F" name "Milind" phone "9876543210" DOB "11112000" Gender and FatherName "John Doe"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks on the Save and Continue button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Entering Address Details "A-12011" "HSR" and pincode "560035"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Enter Reference Dertails  name "John" "8765434567" and "refgmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then validates the price <899> and Summary Package Title "Comprehensive Verification" in the summary Page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ls-summary-packagedescription desktop-mode']//div[@class='description-container']"}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22bf561aaae7d47b875cb1c0b1c7b4d9, findElement {using=xpath, value=//div[@class='ls-summary-packagedescription desktop-mode']//div[@class='description-container']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41951/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22bf561aaae7d47b875cb1c0b1c7b4d9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.sos.Pages.WebPages.RentalServiceWebPage.getTvPackageTitle(RentalServiceWebPage.java:158)
+	at com.sos.stepDefinitions.TenantVerifications.validates_the_price_and_summary_package_title_in_the_summary_page(TenantVerifications.java:74)
+	at ✽.validates the price <899> and Summary Package Title "Comprehensive Verification" in the summary Page(file:///home/milind/Desktop/WebTestFolder/BDD/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:50)
 </textarea>
       
       </div>
                   </div>
-                  <div class="step skip-bg">
-                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And clicks on the Get Started button and selects the "Basic Verification" package</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And Entering Verification Details ID "PAN Card" ID No "BREPG1234F" name "Milind" phone "9876543210" DOB "11112000" Gender and FatherName "John Doe"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And clicks on the Save and Continue button</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And Entering Address Details "A-12011" "HSR" and pincode "560035"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then validates the price <249> and Summary Package Title "Basic Verification" in the summary Page</span>
-      <div>Step skipped
-      </div>
-                  </div>
                   <div class="step pass-bg">
                     <span>com.sos.stepDefinitions.AapHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Basic_Verification_Package_Functionality
+      <div>Comprehensive_Verification_Package_Functionality
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
     
@@ -192,129 +276,50 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>Comprehensive Verification Package Functionality</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Instant Verification Package Functionality</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Comprehensive Verification Package Functionality</div>
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Instant Verification Package Functionality</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Given the user has landed on the NoBroker LoginPage</span>
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>When the user logs in with valid login credentials</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
-	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And clicks on the Get Started button and selects the "Comprehensive Verification" package</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And Entering Verification Details ID "PAN Card" ID No "BREPG1234F" name "Milind" phone "9876543210" DOB "11112000" Gender and FatherName "John Doe"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And clicks on the Save and Continue button</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And Entering Address Details "A-12011" "HSR" and pincode "560035"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And Enter Reference Dertails  name "John" "8765434567" and "ref@gmail.com"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then validates the price <899> and Summary Package Title "Comprehensive Verification" in the summary Page</span>
-      <div>Step skipped
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Instant Verification Package Functionality</div>
-      </div>
-    </div>
-        <div class="scenario_outline ">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Instant Verification Package Functionality</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
-                    <span>Given the user has landed on the NoBroker LoginPage</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
                     <span>When the user logs in with valid login credentials</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
-	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And clicks on the Get Started button and selects the "Instant Verification" package</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And the user selects Verification ID Type "PAN Card" Enters ID Number "BREPG1234F" name "Milind" and DOB "11112000"</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And clicks on the Save and Continue button</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Then validate the price <99> and Package Title "Instant Verification" in the summary Page</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
               </div>
@@ -324,63 +329,55 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Standard Verification Package Functionality</div>
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Basic Verification Package Functionality</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Standard Verification Package Functionality</div>
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Basic Verification Package Functionality</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Given the user has landed on the NoBroker LoginPage</span>
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
+                  <div class="step pass-bg">
                     <span>When the user logs in with valid login credentials</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: Failed to click on element [By.xpath: //div[contains(@class,'nav-item-content') and text()='Log in']]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.sos.CommonFactory.CommonSelenium.click(CommonSelenium.java:218)
-	at com.sos.Pages.WebPages.RentalServiceWebPage.loginSignUpMethod(RentalServiceWebPage.java:255)
-	at com.sos.stepDefinitions.TenantVerifications.the_user_logs_in_with_valid_login_credentials(TenantVerifications.java:26)
-	at ✽.the user logs in with valid login credentials(file:///home/milind/Desktop/WebTestFolder/ProjectFirst/SoftSolutions/src/test/resources/HSFeatures/TenatVerifications.feature:5)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Given the user lands on the Legal Services Page and selects Tenant Verification</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
-                    <span>And clicks on the Get Started button and selects the "Standard Verification" package</span>
-      <div>Step skipped
+                  <div class="step pass-bg">
+                    <span>And clicks on the Get Started button and selects the "Basic Verification" package</span>
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And Entering Verification Details ID "PAN Card" ID No "BREPG1234F" name "Milind" phone "9876543210" DOB "11112000" Gender and FatherName "John Doe"</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And clicks on the Save and Continue button</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And Entering Address Details "A-12011" "HSR" and pincode "560035"</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
-                    <span>Then validates the price <249> and Summary Package Title "Standard Verification" in the summary Page</span>
-      <div>Step skipped
+                  <div class="step pass-bg">
+                    <span>Then validates the price <249> and Summary Package Title "Basic Verification" in the summary Page</span>
+      <div>
       </div>
                   </div>
               </div>
@@ -410,15 +407,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>4</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -431,41 +428,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:32:56 AM</td>
+<td>21:21:06 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>When the user logs in with valid login credentials</a>
+<a href="#" class="linked" test-id='1' id='55'>Then validates the price <899> and Summary Package Title "Comprehensive Verification" in the summary Page</a>
 <div class="">
-<span class="badge badge-default">Verify the Tenant Verification Flow.Basic Verification Package Functionality.When the user logs in with valid login credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:32:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='25'>When the user logs in with valid login credentials</a>
-<div class="">
-<span class="badge badge-default">Verify the Tenant Verification Flow.Instant Verification Package Functionality.When the user logs in with valid login credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:32:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='24'>When the user logs in with valid login credentials</a>
-<div class="">
-<span class="badge badge-default">Verify the Tenant Verification Flow.Standard Verification Package Functionality.When the user logs in with valid login credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:32:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>When the user logs in with valid login credentials</a>
-<div class="">
-<span class="badge badge-default">Verify the Tenant Verification Flow.Comprehensive Verification Package Functionality.When the user logs in with valid login credentials</span>
+<span class="badge badge-default">Verify the Tenant Verification Flow.Comprehensive Verification Package Functionality.Then validates the price <899> and Summary Package Title "Comprehensive Verification" in the summary Page</span>
 </div>
 </td>
 </tr>
@@ -486,13 +453,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 09, 2023 00:32:49</h3>
+<h3>Dec 18, 2023 21:18:35</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 09, 2023 00:33:23</h3>
+<h3>Dec 18, 2023 21:21:16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -543,9 +510,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>4</b> scenarios failed,
+<small data-tooltip='25%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -563,10 +530,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='15%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='96%'><b>32</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>4</b> steps failed,
-<b>24</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='3%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -582,7 +549,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify the Tenant Verification Flow":33.131
+"Verify the Tenant Verification Flow":160.783
 };
 </script>
 <div class="row">
@@ -596,16 +563,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 4,
+passChild: 3,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 4,
+passGrandChild: 32,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 24,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

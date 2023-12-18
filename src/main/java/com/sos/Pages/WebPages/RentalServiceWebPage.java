@@ -118,8 +118,13 @@ public class RentalServiceWebPage extends CommonSelenium {
 	public void tenantBasicVerificationDetails(String idType, String idNumber, String name, String phone, String dob,
 			String fatherName) throws InterruptedException {
 		driver.navigate().refresh();
-		Thread.sleep(5000);
-		click(selectIdCard);
+	    if(isElementPresent(driver,selectIdCard)) {
+	    	click(selectIdCard);
+	    }else {
+	    	waitFor(5);
+	    	click(selectIdCard);
+	    	waitFor(1);
+	    }
 		click(driver.findElement(By.xpath(idTypesLocator.replace("idType", idType))));
 		sendKeys(idNumberLoc, idNumber);
 		sendKeys(tenantNameloc, name);
