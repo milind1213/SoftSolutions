@@ -51,4 +51,4 @@ Feature: Verify the Tenant Verification Flow
 
     Examples: 
       | tvPackage                  | idType   | idNumber   | name   | phone      | DOB      | FatherName | flatNo  | locality | pincode | refName | refMobile  | refEmail      |
-      | Comprehensive Verification | PAN Card | BREPG1234F | Milind | 9876543210 | 11112000 | John Doe   | A-12011 | HSR      |  560035 | John    | 8765434567 | refgmail.com |
+      | Comprehensive Verification | PAN Card | BREPG1234F | Milind | 9876543210 | 11112000 | John Doe   | A-12011 | HSR      |  560035 | John    | 8765434567 | ref@gmail.com |

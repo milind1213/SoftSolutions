@@ -23,7 +23,7 @@ public class TenantVerifications {
 
     @When("the user logs in with valid login credentials")
     public void the_user_logs_in_with_valid_login_credentials() {
-    	user.loginSignUpMethod(generateRandomMobileNumber(), "9999", faker.name().firstName(), faker.internet().emailAddress());
+    	user.loginSignUpMethod(generateRandomMobileNumber(), "9999", faker.name().firstName(), generateRandomEmail());
     }
 
     @Given("the user lands on the Legal Services Page and selects Tenant Verification")
@@ -87,5 +87,10 @@ public class TenantVerifications {
     
     public static String generateRandomMobileNumber() {
         return "665" + RandomStringUtils.randomNumeric(4) + "321";
-    }   
+    }
+
+    public static String generateRandomEmail() {
+        return RandomStringUtils.randomNumeric(4) + "@gmail.com";
+    }
+
 } 

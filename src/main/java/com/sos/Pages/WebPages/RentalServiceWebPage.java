@@ -29,19 +29,19 @@ public class RentalServiceWebPage extends CommonSelenium {
 
 	// LOGIN-SIGNUP
 	private By loginLinkBtn = By.xpath("//div[contains(@class,'nav-item-content') and text()='Log in']");
-	private By mobileInput = By.xpath("//input[starts-with(@placeholder,'Enter') and @maxlength='10']");
-	private By otpField = By.xpath("//div[@class='otp-wrapper']//input");
+	private By mobileInput = By.xpath("//input[starts-with(@id,'signUp')]");
+	private By otpField = By.xpath("//div[@class='flex items-center justify-center']//input");
 	private By loginsubmit = By.id("signUpSubmit");
-	private By usernameField = By.id("login-signup-form__name-input");
-	private By emailField = By.id("login-signup-form__email-input");
-	private By signUpsubmit = By.xpath("//button[@type='submit']");
+	private By usernameField = By.xpath("//input[@id='name' and  @name = 'name']");
+	private By emailField = By.xpath("//input[@id='email' and  @name = 'email']");
+	private By signUpsubmit = By.xpath("//button[text()='Continue']");
 	//
 	private By Other = By.xpath("//div[@class='css-151xaom-placeholder nb-select__placeholder' or text()='Other']");
 	private By date = By.xpath("(//div[@aria-label='day-1'])[1]");
 	private By oneDayDelivery = By.xpath(
 			"//div[@class='addon-card' and div[@class='addon-card-left']/div[@class='addon-title' and text()='Get One Day Delivery']]//div[@class='add-button ']");
 	private By proceedBtn = By.xpath("//button[contains(text(),'Proceed')]");
-	private By SaveAndConLocBtn = By.xpath("//*[contains(text(),'Save and Continue')]");
+	private By SaveAndConLocBtn = By.xpath("//*[contains(text(),'Save & Proceed')]");
 	private By priviewBtn = By.xpath("//button[@class='btn btn-default'] [text()='Preview']");
 	private By esigns = By.xpath("//div[contains(@class, 'addon-card')]//div[contains(@class, 'esign-counter')]/div");
 	private By amountInput = By.xpath("//input[@id='ls-documentforms-amount-nbInput']");
