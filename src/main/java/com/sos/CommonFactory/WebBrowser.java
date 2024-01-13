@@ -32,7 +32,7 @@ public class WebBrowser {
 			if (isHeadless) {
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
-				options.addArguments("--headless");
+				options.addArguments("--headless=new");
 				options.addArguments("--disable-gpu");
 				options.addArguments("--headless");
 				options.addArguments("disable-infobars");
