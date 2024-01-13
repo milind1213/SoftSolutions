@@ -36,7 +36,7 @@ public class WebBrowser {
 				options.addArguments("--disable-gpu");
 				options.addArguments("--headless");
 				options.addArguments("disable-infobars");
-				options.addArguments("--user-data-dir=/home/milind/chromedriver_data");
+				options.addArguments("--user-data-dir=/home/milind/IdeaProjects/SoftSolutions/test-output/Default suite");
 				options.addArguments("--disable-dev-shm-usage"); // Disable DevToolsActivePort check
 				System.out.println("Launching headless browser");
 			}
