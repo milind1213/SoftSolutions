@@ -26,8 +26,7 @@ public class WebBrowser {
 		boolean isHeadless = Boolean.parseBoolean(configReader.init_prop().getProperty("headless"));
 
 		if (browser.equals("chrome")) {
-			// System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-			WebDriverManager.chromedriver().driverVersion("120.0.6099.216").setup();
+			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			if (isHeadless) {
 				options.addArguments("--no-sandbox");
