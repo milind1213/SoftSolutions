@@ -27,7 +27,7 @@ public class WebBrowser {
 
 		if (browser.equals("chrome")) {
 			// System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().driverVersion("120.0.6099.216").setup();
 			ChromeOptions options = new ChromeOptions();
 			if (isHeadless) {
 				options.addArguments("--no-sandbox");
